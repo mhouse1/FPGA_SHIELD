@@ -249,11 +249,11 @@ Wire Wire Line
 	1650 3150 2100 3150
 Connection ~ 1900 4350
 $Comp
-L Robot:Battery_Cell BT1
+L Robot:Battery_Cell POWER_INPUT
 U 1 1 5DA1E1A2
 P 700 4550
-F 0 "BT1" H 818 4646 50  0000 L CNN
-F 1 "Battery_Cell" H 818 4555 50  0000 L CNN
+F 0 "POWER_INPUT" H 818 4646 50  0000 L CNN
+F 1 "XT60_CONNECTOR" H 818 4555 50  0000 L CNN
 F 2 "" V 700 4610 50  0001 C CNN
 F 3 "~" V 700 4610 50  0001 C CNN
 	1    700  4550
@@ -533,7 +533,7 @@ F 3 "" H 6500 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7150 3750 2    50   Input ~ 0
-PWR_RLY
+PWR_8CH_RLY
 Wire Wire Line
 	7150 3750 6950 3750
 Wire Wire Line
@@ -541,7 +541,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 3900 6500 3900
 Text HLabel 3400 5350 2    50   Output ~ 0
-PWR_RLY
+PWR_8CH_RLY
 Wire Wire Line
 	3150 5350 3400 5350
 Connection ~ 3150 5350
@@ -720,7 +720,7 @@ F 3 "" H 3350 2400 50  0001 C CNN
 $EndComp
 Connection ~ 3350 2400
 Text HLabel 3500 7300 2    50   Output ~ 0
-PWR_INDUCTIVE_SENSOR
+PWR_INDUCTIVE_SENSORS
 Wire Wire Line
 	3150 7300 3500 7300
 Connection ~ 3150 7300
