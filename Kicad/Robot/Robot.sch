@@ -1,0 +1,729 @@
+EESchema Schematic File Version 4
+LIBS:Robot-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Robot:Conn_02x20_Odd_Even_MountingPin JP1
+U 1 1 5D982EED
+P 5050 4400
+F 0 "JP1" H 5100 5517 50  0000 C CNN
+F 1 "Altera 40 pin connector" H 5100 5426 50  0000 C CNN
+F 2 "" H 5050 4400 50  0001 C CNN
+F 3 "~" H 5050 4400 50  0001 C CNN
+	1    5050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:Conn_02x20_Odd_Even_MountingPin JP2
+U 1 1 5D986497
+P 4400 2000
+F 0 "JP2" H 4450 3117 50  0000 C CNN
+F 1 "Altera 40 pin connector" H 4450 3026 50  0000 C CNN
+F 2 "" H 4400 2000 50  0001 C CNN
+F 3 "~" H 4400 2000 50  0001 C CNN
+	1    4400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:Generic_DC_to_DC_Module U3
+U 1 1 5D9BEB71
+P 2600 5150
+F 0 "U3" H 2600 5617 50  0000 C CNN
+F 1 "Generic_DC_to_DC_Module" H 2600 5526 50  0000 C CNN
+F 2 "" H 2600 4750 50  0001 C CNN
+F 3 "" H 2600 4650 50  0001 C CNN
+	1    2600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:Generic_DC_to_DC_Module U4
+U 1 1 5D9C470C
+P 2600 6150
+F 0 "U4" H 2600 6617 50  0000 C CNN
+F 1 "Generic_DC_to_DC_Module" H 2600 6526 50  0000 C CNN
+F 2 "" H 2600 5750 50  0001 C CNN
+F 3 "" H 2600 5650 50  0001 C CNN
+	1    2600 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5950 3150 5950
+Wire Wire Line
+	3150 5950 3150 6050
+Wire Wire Line
+	3150 6050 3100 6050
+Wire Wire Line
+	3100 4950 3150 4950
+Wire Wire Line
+	3150 4950 3150 5050
+Wire Wire Line
+	3150 5050 3100 5050
+Wire Wire Line
+	3100 3950 3150 3950
+Wire Wire Line
+	3150 3950 3150 4050
+Wire Wire Line
+	3150 4050 3100 4050
+$Comp
+L power:GND #PWR02
+U 1 1 5D9CF5A7
+P 3150 5050
+F 0 "#PWR02" H 3150 4800 50  0001 C CNN
+F 1 "GND" H 3155 4877 50  0000 C CNN
+F 2 "" H 3150 5050 50  0001 C CNN
+F 3 "" H 3150 5050 50  0001 C CNN
+	1    3150 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 5050
+$Comp
+L power:GND #PWR03
+U 1 1 5D9CFD25
+P 3150 6050
+F 0 "#PWR03" H 3150 5800 50  0001 C CNN
+F 1 "GND" H 3155 5877 50  0000 C CNN
+F 2 "" H 3150 6050 50  0001 C CNN
+F 3 "" H 3150 6050 50  0001 C CNN
+	1    3150 6050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 6050
+$Comp
+L Robot:Screw_Terminal_01x04 J1
+U 1 1 5D9D82A3
+P 6150 2800
+F 0 "J1" H 6068 2375 50  0000 C CNN
+F 1 "LORA RX/TX/GND" H 6068 2466 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-4_P5.00mm" H 6150 2800 50  0001 C CNN
+F 3 "~" H 6150 2800 50  0001 C CNN
+	1    6150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3950 2050 3950
+Wire Wire Line
+	2050 3950 2050 4000
+Wire Wire Line
+	2050 4050 2100 4050
+Wire Wire Line
+	2100 4300 2050 4300
+Wire Wire Line
+	2050 4300 2050 4350
+Wire Wire Line
+	2050 4400 2100 4400
+Wire Wire Line
+	2100 4950 2050 4950
+Wire Wire Line
+	2050 4950 2050 5000
+Wire Wire Line
+	2050 5050 2100 5050
+Wire Wire Line
+	2100 5300 2050 5300
+Wire Wire Line
+	2050 5300 2050 5350
+Wire Wire Line
+	2050 5400 2100 5400
+Wire Wire Line
+	2100 5950 2050 5950
+Wire Wire Line
+	2050 5950 2050 6000
+Wire Wire Line
+	2050 6050 2100 6050
+Wire Wire Line
+	2100 6300 2050 6300
+Wire Wire Line
+	2050 6300 2050 6350
+Wire Wire Line
+	2050 6400 2100 6400
+Wire Wire Line
+	3100 6300 3150 6300
+Wire Wire Line
+	3150 6300 3150 6350
+Wire Wire Line
+	3150 6400 3100 6400
+Wire Wire Line
+	3100 5300 3150 5300
+Wire Wire Line
+	3150 5300 3150 5350
+Wire Wire Line
+	3150 5400 3100 5400
+Wire Wire Line
+	3100 4300 3150 4300
+Wire Wire Line
+	3150 4300 3150 4350
+Wire Wire Line
+	3150 4400 3100 4400
+Wire Wire Line
+	2050 4000 1800 4000
+Connection ~ 2050 4000
+Wire Wire Line
+	2050 4000 2050 4050
+Connection ~ 2050 5000
+Wire Wire Line
+	2050 5000 2050 5050
+Wire Wire Line
+	2050 4350 1900 4350
+Wire Wire Line
+	1900 4350 1900 5350
+Wire Wire Line
+	1900 5350 2050 5350
+Connection ~ 2050 4350
+Wire Wire Line
+	2050 4350 2050 4400
+Connection ~ 2050 5350
+Wire Wire Line
+	2050 5350 2050 5400
+Wire Wire Line
+	2050 6000 1800 6000
+Connection ~ 2050 6000
+Wire Wire Line
+	2050 6000 2050 6050
+Wire Wire Line
+	1800 4000 1800 5000
+Wire Wire Line
+	1800 5000 2050 5000
+Wire Wire Line
+	1800 6000 1800 5900
+Connection ~ 1800 5000
+Wire Wire Line
+	2050 6350 1900 6350
+Wire Wire Line
+	1900 6350 1900 6200
+Connection ~ 2050 6350
+Wire Wire Line
+	2050 6350 2050 6400
+Connection ~ 1900 5350
+Wire Wire Line
+	5950 2900 5900 2900
+Wire Wire Line
+	5900 2900 5900 2850
+Wire Wire Line
+	5900 2800 5950 2800
+$Comp
+L power:GND #PWR05
+U 1 1 5D9EAEC7
+P 5850 2850
+F 0 "#PWR05" H 5850 2600 50  0001 C CNN
+F 1 "GND" V 5855 2722 50  0000 R CNN
+F 2 "" H 5850 2850 50  0001 C CNN
+F 3 "" H 5850 2850 50  0001 C CNN
+	1    5850 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 2850 5850 2850
+Connection ~ 5900 2850
+Wire Wire Line
+	5900 2850 5900 2800
+$Comp
+L Robot:USB_POWER U1
+U 1 1 5DA0A578
+P 2400 3150
+F 0 "U1" H 2630 3134 50  0000 L CNN
+F 1 "USB_POWER" H 2630 3043 50  0000 L CNN
+F 2 "" H 2400 3375 50  0001 C CIN
+F 3 "" H 2400 3150 50  0001 C CNN
+	1    2400 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3300 1800 3300
+Wire Wire Line
+	1800 3300 1800 4000
+Connection ~ 1800 4000
+Wire Wire Line
+	1900 4350 1650 4350
+Wire Wire Line
+	1650 3150 2100 3150
+Connection ~ 1900 4350
+$Comp
+L Robot:Battery_Cell BT1
+U 1 1 5DA1E1A2
+P 700 4550
+F 0 "BT1" H 818 4646 50  0000 L CNN
+F 1 "Battery_Cell" H 818 4555 50  0000 L CNN
+F 2 "" V 700 4610 50  0001 C CNN
+F 3 "~" V 700 4610 50  0001 C CNN
+	1    700  4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  3600 1650 3600
+Wire Wire Line
+	700  4650 700  5400
+Wire Wire Line
+	700  5400 1800 5400
+Connection ~ 1800 5400
+Wire Wire Line
+	1800 5400 1800 5000
+Connection ~ 1650 3600
+Wire Wire Line
+	1650 3600 1650 3150
+Wire Wire Line
+	1650 3600 1650 4350
+Wire Wire Line
+	700  3600 700  4350
+$Comp
+L Robot:Generic_DC_to_DC_Module U5
+U 1 1 5D982C49
+P 2600 7100
+F 0 "U5" H 2600 7567 50  0000 C CNN
+F 1 "Generic_DC_to_DC_Module" H 2600 7476 50  0000 C CNN
+F 2 "" H 2600 6700 50  0001 C CNN
+F 3 "" H 2600 6600 50  0001 C CNN
+	1    2600 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6900 2050 6900
+Wire Wire Line
+	2050 6900 2050 6950
+Wire Wire Line
+	2050 7000 2100 7000
+Wire Wire Line
+	2100 7250 2050 7250
+Wire Wire Line
+	2050 7250 2050 7300
+Wire Wire Line
+	2050 7350 2100 7350
+Wire Wire Line
+	3100 6900 3150 6900
+Wire Wire Line
+	3150 6900 3150 6950
+Wire Wire Line
+	3150 7000 3100 7000
+Wire Wire Line
+	3100 7250 3150 7250
+Wire Wire Line
+	3150 7250 3150 7300
+Wire Wire Line
+	3150 7350 3100 7350
+Wire Wire Line
+	1900 6200 1850 6200
+Wire Wire Line
+	1850 6200 1850 7300
+Wire Wire Line
+	1850 7300 2050 7300
+Connection ~ 1900 6200
+Wire Wire Line
+	1900 6200 1900 5350
+Connection ~ 2050 7300
+Wire Wire Line
+	2050 7300 2050 7350
+Wire Wire Line
+	1800 5900 1700 5900
+Wire Wire Line
+	1700 5900 1700 6950
+Wire Wire Line
+	1700 6950 2050 6950
+Connection ~ 1800 5900
+Wire Wire Line
+	1800 5900 1800 5400
+Connection ~ 2050 6950
+Wire Wire Line
+	2050 6950 2050 7000
+$Comp
+L power:GND #PWR04
+U 1 1 5D98FD72
+P 3250 7000
+F 0 "#PWR04" H 3250 6750 50  0001 C CNN
+F 1 "GND" H 3255 6827 50  0000 C CNN
+F 2 "" H 3250 7000 50  0001 C CNN
+F 3 "" H 3250 7000 50  0001 C CNN
+	1    3250 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6950 3250 6950
+Wire Wire Line
+	3250 6950 3250 7000
+Connection ~ 3150 6950
+Wire Wire Line
+	3150 6950 3150 7000
+Wire Wire Line
+	7000 1700 6950 1700
+Wire Wire Line
+	6950 1700 6950 1800
+Wire Wire Line
+	6950 1800 7000 1800
+Wire Wire Line
+	6950 1800 6950 1900
+Wire Wire Line
+	6950 1900 7000 1900
+Connection ~ 6950 1800
+Wire Wire Line
+	6950 1900 6950 2000
+Wire Wire Line
+	6950 2000 7000 2000
+Connection ~ 6950 1900
+Wire Wire Line
+	6950 2000 6950 2100
+Wire Wire Line
+	6950 2100 7000 2100
+Connection ~ 6950 2000
+Wire Wire Line
+	6950 2100 6950 2200
+Wire Wire Line
+	6950 2200 7000 2200
+Connection ~ 6950 2100
+Wire Wire Line
+	6950 2200 6950 2300
+Wire Wire Line
+	6950 2300 7000 2300
+Connection ~ 6950 2200
+Wire Wire Line
+	6950 2300 6950 2400
+Wire Wire Line
+	6950 2400 7000 2400
+Connection ~ 6950 2300
+Wire Wire Line
+	8050 1700 8000 1700
+Wire Wire Line
+	8000 1700 8000 1800
+Wire Wire Line
+	8000 1800 8050 1800
+Wire Wire Line
+	8000 1800 8000 1900
+Wire Wire Line
+	8000 1900 8050 1900
+Connection ~ 8000 1800
+Wire Wire Line
+	8000 1900 8000 2000
+Wire Wire Line
+	8000 2000 8050 2000
+Connection ~ 8000 1900
+Wire Wire Line
+	8000 2000 8000 2100
+Wire Wire Line
+	8000 2100 8050 2100
+Connection ~ 8000 2000
+Wire Wire Line
+	8000 2100 8000 2200
+Wire Wire Line
+	8000 2200 8050 2200
+Connection ~ 8000 2100
+Wire Wire Line
+	8000 2200 8000 2300
+Wire Wire Line
+	8000 2300 8050 2300
+Connection ~ 8000 2200
+Wire Wire Line
+	8000 2300 8000 2400
+Wire Wire Line
+	8000 2400 8050 2400
+Connection ~ 8000 2300
+$Comp
+L power:GND #PWR06
+U 1 1 5D9C3089
+P 8000 2550
+F 0 "#PWR06" H 8000 2300 50  0001 C CNN
+F 1 "GND" H 8005 2377 50  0000 C CNN
+F 2 "" H 8000 2550 50  0001 C CNN
+F 3 "" H 8000 2550 50  0001 C CNN
+	1    8000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2400 8000 2550
+Connection ~ 8000 2400
+$Comp
+L Robot:X8R_Receiver U6
+U 1 1 5D971451
+P 7550 2100
+F 0 "U6" H 7625 2725 50  0000 C CNN
+F 1 "X8R_Receiver" H 7625 2634 50  0000 C CNN
+F 2 "" H 5400 2050 50  0001 C CNN
+F 3 "~" H 5400 2050 50  0001 C CNN
+	1    7550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2400 5950 2400
+Wire Wire Line
+	4700 2300 5950 2300
+Wire Wire Line
+	4700 2200 5950 2200
+Wire Wire Line
+	4700 2100 5950 2100
+Wire Wire Line
+	5950 2000 4700 2000
+Wire Wire Line
+	5950 1900 4700 1900
+Wire Wire Line
+	4700 1800 5950 1800
+Wire Wire Line
+	5950 1700 4700 1700
+Wire Wire Line
+	5950 3000 4700 3000
+Wire Wire Line
+	5950 2700 5300 2700
+Wire Wire Line
+	5300 2700 5300 2900
+Wire Wire Line
+	5300 2900 4700 2900
+Text HLabel 6850 1450 0    50   Input ~ 0
+PWR_X8R
+Wire Wire Line
+	6850 1450 6950 1450
+Wire Wire Line
+	6950 1450 6950 1700
+Connection ~ 6950 1700
+Text HLabel 3500 4350 2    50   Output ~ 0
+PWR_X8R
+Wire Wire Line
+	3150 4350 3500 4350
+Connection ~ 3150 4350
+Wire Wire Line
+	3150 4350 3150 4400
+$Comp
+L Transistor_Array:TBD62783A U7
+U 1 1 5DA52343
+P 6500 4400
+F 0 "U7" H 6500 5081 50  0000 C CNN
+F 1 "TBD62783A" H 6500 4990 50  0000 C CNN
+F 2 "" H 6500 3850 50  0001 C CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 6200 4800 50  0001 C CNN
+	1    6500 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 4050
+$Comp
+L power:GND #PWR01
+U 1 1 5D9CE9F7
+P 3150 4050
+F 0 "#PWR01" H 3150 3800 50  0001 C CNN
+F 1 "GND" H 3155 3877 50  0000 C CNN
+F 2 "" H 3150 4050 50  0001 C CNN
+F 3 "" H 3150 4050 50  0001 C CNN
+	1    3150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:Generic_DC_to_DC_Module U2
+U 1 1 5D992FE8
+P 2600 4150
+F 0 "U2" H 2600 4617 50  0000 C CNN
+F 1 "Generic_DC_to_DC_Module" H 2600 4526 50  0000 C CNN
+F 2 "" H 2600 3750 50  0001 C CNN
+F 3 "" H 2600 3650 50  0001 C CNN
+	1    2600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA5AE62
+P 6500 5000
+F 0 "#PWR?" H 6500 4750 50  0001 C CNN
+F 1 "GND" H 6505 4827 50  0000 C CNN
+F 2 "" H 6500 5000 50  0001 C CNN
+F 3 "" H 6500 5000 50  0001 C CNN
+	1    6500 5000
+	1    0    0    -1  
+$EndComp
+Text HLabel 7150 3750 2    50   Input ~ 0
+PWR_RLY
+Wire Wire Line
+	7150 3750 6950 3750
+Wire Wire Line
+	6950 3750 6950 3900
+Wire Wire Line
+	6950 3900 6500 3900
+Text HLabel 3400 5350 2    50   Output ~ 0
+PWR_RLY
+Wire Wire Line
+	3150 5350 3400 5350
+Connection ~ 3150 5350
+Wire Wire Line
+	3150 5350 3150 5400
+Wire Wire Line
+	5350 4100 6100 4100
+Wire Wire Line
+	5350 4200 6100 4200
+Wire Wire Line
+	6100 4300 5350 4300
+Wire Wire Line
+	5350 4400 6100 4400
+Wire Wire Line
+	6100 4500 5350 4500
+Wire Wire Line
+	5350 4600 6100 4600
+Wire Wire Line
+	6100 4700 5350 4700
+Wire Wire Line
+	5350 4800 6100 4800
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5DAC20A1
+P 10100 1350
+F 0 "H1" H 10200 1399 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10200 1308 50  0000 L CNN
+F 2 "" H 10100 1350 50  0001 C CNN
+F 3 "~" H 10100 1350 50  0001 C CNN
+	1    10100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5DAC2F33
+P 10100 1800
+F 0 "H2" H 10200 1849 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10200 1758 50  0000 L CNN
+F 2 "" H 10100 1800 50  0001 C CNN
+F 3 "~" H 10100 1800 50  0001 C CNN
+	1    10100 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5DAC3BCE
+P 10100 2300
+F 0 "H3" H 10200 2349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10200 2258 50  0000 L CNN
+F 2 "" H 10100 2300 50  0001 C CNN
+F 3 "~" H 10100 2300 50  0001 C CNN
+	1    10100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5DAC4D4D
+P 10100 2750
+F 0 "H4" H 10200 2799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10200 2708 50  0000 L CNN
+F 2 "" H 10100 2750 50  0001 C CNN
+F 3 "~" H 10100 2750 50  0001 C CNN
+	1    10100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5DAC5AC2
+P 10100 3250
+F 0 "H5" H 10200 3299 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10200 3208 50  0000 L CNN
+F 2 "" H 10100 3250 50  0001 C CNN
+F 3 "~" H 10100 3250 50  0001 C CNN
+	1    10100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 5DAC5F88
+P 10100 3700
+F 0 "H6" H 10200 3749 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10200 3658 50  0000 L CNN
+F 2 "" H 10100 3700 50  0001 C CNN
+F 3 "~" H 10100 3700 50  0001 C CNN
+	1    10100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1700 9650 1700
+Wire Wire Line
+	9650 1700 9650 1450
+Wire Wire Line
+	9650 1450 10100 1450
+Wire Wire Line
+	9300 1800 9650 1800
+Wire Wire Line
+	9650 1800 9650 1900
+Wire Wire Line
+	9650 1900 10100 1900
+Wire Wire Line
+	9300 1900 9550 1900
+Wire Wire Line
+	9550 1900 9550 2400
+Wire Wire Line
+	9550 2400 10100 2400
+Wire Wire Line
+	9300 2200 9500 2200
+Wire Wire Line
+	9500 2200 9500 2850
+Wire Wire Line
+	9500 2850 10100 2850
+Wire Wire Line
+	9300 2300 9450 2300
+Wire Wire Line
+	9450 2300 9450 3350
+Wire Wire Line
+	9450 3350 10100 3350
+Wire Wire Line
+	9300 2400 9400 2400
+Wire Wire Line
+	9400 2400 9400 3800
+Wire Wire Line
+	9400 3800 10100 3800
+Text HLabel 3450 6350 2    50   Output ~ 0
+PWR_DE0_NANO
+Wire Wire Line
+	3150 6350 3450 6350
+Connection ~ 3150 6350
+Wire Wire Line
+	3150 6350 3150 6400
+$Comp
+L Connector:Screw_Terminal_01x08 J1
+U 1 1 5DB21D3C
+P 3000 2100
+F 0 "J1" H 2918 1475 50  0000 C CNN
+F 1 "Screw_Terminal_01x08" H 2918 1566 50  0000 C CNN
+F 2 "" H 3000 2100 50  0001 C CNN
+F 3 "~" H 3000 2100 50  0001 C CNN
+	1    3000 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 1700 4200 1700
+Wire Wire Line
+	4200 1800 3200 1800
+Wire Wire Line
+	3200 1900 4200 1900
+Wire Wire Line
+	3200 2000 4200 2000
+Wire Wire Line
+	3200 2100 3350 2100
+Wire Wire Line
+	3350 2100 3350 2200
+Wire Wire Line
+	3350 2200 3200 2200
+Wire Wire Line
+	3350 2200 3350 2300
+Wire Wire Line
+	3350 2300 3200 2300
+Connection ~ 3350 2200
+Wire Wire Line
+	3350 2300 3350 2400
+Wire Wire Line
+	3350 2400 3200 2400
+Connection ~ 3350 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5DB9FB20
+P 3350 2400
+F 0 "#PWR?" H 3350 2150 50  0001 C CNN
+F 1 "GND" H 3355 2227 50  0000 C CNN
+F 2 "" H 3350 2400 50  0001 C CNN
+F 3 "" H 3350 2400 50  0001 C CNN
+	1    3350 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 2400
+Text HLabel 3500 7300 2    50   Output ~ 0
+PWR_INDUCTIVE_SENSOR
+Wire Wire Line
+	3150 7300 3500 7300
+Connection ~ 3150 7300
+Wire Wire Line
+	3150 7300 3150 7350
+$EndSCHEMATC
