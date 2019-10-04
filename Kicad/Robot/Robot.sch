@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 29 0
+LIBS:Robot-cache
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -226,11 +227,7 @@ F 3 "~" V 700 4610 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	700  3600 1650 3600
-Wire Wire Line
 	700  4650 700  5400
-Wire Wire Line
-	700  5400 1800 5400
 Connection ~ 1800 5400
 Wire Wire Line
 	1800 5400 1800 5000
@@ -983,4 +980,120 @@ Wire Wire Line
 Wire Wire Line
 	9000 4850 9000 4900
 Connection ~ 8700 4850
+$Comp
+L Robot:Screw_Terminal_01x03 J8
+U 1 1 5D98AFC3
+P 4450 4200
+F 0 "J8" H 4530 4242 50  0000 L CNN
+F 1 "MotorDriver1" H 4530 4151 50  0000 L CNN
+F 2 "" H 4450 4200 50  0001 C CNN
+F 3 "~" H 4450 4200 50  0001 C CNN
+	1    4450 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Robot:Screw_Terminal_01x03 J9
+U 1 1 5D98E149
+P 4450 4700
+F 0 "J9" H 4530 4742 50  0000 L CNN
+F 1 "MotorDriver2" H 4530 4651 50  0000 L CNN
+F 2 "" H 4450 4700 50  0001 C CNN
+F 3 "~" H 4450 4700 50  0001 C CNN
+	1    4450 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 4100 4850 4100
+Wire Wire Line
+	4650 4200 4850 4200
+Wire Wire Line
+	4650 4600 4850 4600
+Wire Wire Line
+	4650 4700 4850 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5D9DA318
+P 4650 4800
+F 0 "#PWR?" H 4650 4550 50  0001 C CNN
+F 1 "GND" H 4655 4627 50  0000 C CNN
+F 2 "" H 4650 4800 50  0001 C CNN
+F 3 "" H 4650 4800 50  0001 C CNN
+	1    4650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9DA8F4
+P 4650 4300
+F 0 "#PWR?" H 4650 4050 50  0001 C CNN
+F 1 "GND" H 4655 4127 50  0000 C CNN
+F 2 "" H 4650 4300 50  0001 C CNN
+F 3 "" H 4650 4300 50  0001 C CNN
+	1    4650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:Screw_Terminal_01x03 J10
+U 1 1 5D9DD27D
+P 1100 2300
+F 0 "J10" H 1180 2342 50  0000 L CNN
+F 1 "LightBar1" H 1180 2251 50  0000 L CNN
+F 2 "" H 1100 2300 50  0001 C CNN
+F 3 "~" H 1100 2300 50  0001 C CNN
+	1    1100 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 2400 1300 5400
+Wire Wire Line
+	700  5400 1300 5400
+Connection ~ 1300 5400
+Wire Wire Line
+	1300 5400 1550 5400
+$Comp
+L Robot:Screw_Terminal_01x03 J?
+U 1 1 5D9FDE0A
+P 1050 6500
+F 0 "J?" H 1130 6542 50  0000 L CNN
+F 1 "LightBar2" H 1130 6451 50  0000 L CNN
+F 2 "" H 1050 6500 50  0001 C CNN
+F 3 "~" H 1050 6500 50  0001 C CNN
+	1    1050 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 6600 1550 6600
+Wire Wire Line
+	1550 6600 1550 5400
+Connection ~ 1550 5400
+Wire Wire Line
+	1550 5400 1800 5400
+Wire Wire Line
+	700  3600 1400 3600
+Wire Wire Line
+	1300 2300 1450 2300
+Wire Wire Line
+	1450 2300 1450 3600
+Connection ~ 1450 3600
+Wire Wire Line
+	1450 3600 1650 3600
+Wire Wire Line
+	1250 6500 1400 6500
+Wire Wire Line
+	1400 6500 1400 3600
+Connection ~ 1400 3600
+Wire Wire Line
+	1400 3600 1450 3600
+Text HLabel 1450 2000 2    50   Input ~ 0
+LightBar1PositiveInput
+Text HLabel 1200 5900 0    50   Input ~ 0
+LightBar2PosInput
+Wire Wire Line
+	1200 5900 1250 5900
+Wire Wire Line
+	1250 5900 1250 6400
+Wire Wire Line
+	1450 2000 1300 2000
+Wire Wire Line
+	1300 2000 1300 2200
 $EndSCHEMATC
