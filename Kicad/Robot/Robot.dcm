@@ -6,6 +6,12 @@ K battery cell
 F ~
 $ENDCMP
 #
+$CMP Conn_01x06
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP Conn_01x10
 D Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -16,6 +22,16 @@ $CMP Conn_02x20_Odd_Even_MountingPin
 D Generic connectable mounting pin connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
+$ENDCMP
+#
+$CMP MOD-nRF8001
+D Bluetooth Low Energy module based on nRF8001 chipset
+K Bluetooth Low Energy nRF8001
+F https://www.olimex.com/Products/Modules/RF/MOD-nRF8001/
+$ENDCMP
+#
+$CMP RFM9X
+D LORA Module
 $ENDCMP
 #
 $CMP R_Small_US
