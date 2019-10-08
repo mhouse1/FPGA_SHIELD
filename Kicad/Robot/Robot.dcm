@@ -6,6 +6,12 @@ K battery cell
 F ~
 $ENDCMP
 #
+$CMP Conn_01x02_Male
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP Conn_01x06
 D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -21,6 +27,12 @@ $ENDCMP
 $CMP Conn_02x20_Odd_Even_MountingPin
 D Generic connectable mounting pin connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
+F ~
+$ENDCMP
+#
+$CMP Jumper_2_Bridged
+D Jumper, 2-pole, closed/bridged
+K Jumper SPST
 F ~
 $ENDCMP
 #
@@ -53,6 +65,16 @@ F ~
 $ENDCMP
 #
 $CMP TBD62089A
+D 8-Channel Source Type Transistor Array, TTL and CMOS compatible, 500mA, 50V, DIP-18/SOP-18/SSOP-18/SOIC-18W
+K relays solenoids lamps steppers servos LEDs
+$ENDCMP
+#
+$CMP TDB62381A
+D 8-Channel Source Type Transistor Array, TTL and CMOS compatible, 500mA, 50V, DIP-18/SOP-18/SSOP-18/SOIC-18W
+K relays solenoids lamps steppers servos LEDs
+$ENDCMP
+#
+$CMP TXS0108E
 D 8-Channel Source Type Transistor Array, TTL and CMOS compatible, 500mA, 50V, DIP-18/SOP-18/SSOP-18/SOIC-18W
 K relays solenoids lamps steppers servos LEDs
 $ENDCMP
