@@ -71,11 +71,11 @@ Wire Wire Line
 Wire Wire Line
 	3150 5050 3100 5050
 Wire Wire Line
-	3100 3950 3150 3950
+	3350 3950 3400 3950
 Wire Wire Line
-	3150 3950 3150 4050
+	3400 3950 3400 4050
 Wire Wire Line
-	3150 4050 3100 4050
+	3400 4050 3350 4050
 $Comp
 L power:GND #PWR02
 U 1 1 5D9CF5A7
@@ -101,17 +101,13 @@ F 3 "" H 3150 6050 50  0001 C CNN
 $EndComp
 Connection ~ 3150 6050
 Wire Wire Line
-	2100 3950 2050 3950
+	2350 3950 2300 3950
 Wire Wire Line
-	2050 3950 2050 4000
+	2300 4050 2350 4050
 Wire Wire Line
-	2050 4050 2100 4050
+	2350 4300 2300 4300
 Wire Wire Line
-	2100 4300 2050 4300
-Wire Wire Line
-	2050 4300 2050 4350
-Wire Wire Line
-	2050 4400 2100 4400
+	2300 4400 2350 4400
 Wire Wire Line
 	2100 4950 2050 4950
 Wire Wire Line
@@ -139,8 +135,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 6300 3150 6300
 Wire Wire Line
-	3150 6300 3150 6350
-Wire Wire Line
 	3150 6400 3100 6400
 Wire Wire Line
 	3100 5300 3150 5300
@@ -149,28 +143,16 @@ Wire Wire Line
 Wire Wire Line
 	3150 5400 3100 5400
 Wire Wire Line
-	3100 4300 3150 4300
+	3350 4300 3400 4300
 Wire Wire Line
-	3150 4300 3150 4350
-Wire Wire Line
-	3150 4400 3100 4400
-Wire Wire Line
-	2050 4000 1800 4000
-Connection ~ 2050 4000
-Wire Wire Line
-	2050 4000 2050 4050
+	3400 4400 3350 4400
 Connection ~ 2050 5000
 Wire Wire Line
 	2050 5000 2050 5050
 Wire Wire Line
-	2050 4350 1900 4350
-Wire Wire Line
 	1900 4350 1900 5350
 Wire Wire Line
 	1900 5350 2050 5350
-Connection ~ 2050 4350
-Wire Wire Line
-	2050 4350 2050 4400
 Connection ~ 2050 5350
 Wire Wire Line
 	2050 5350 2050 5400
@@ -179,8 +161,6 @@ Wire Wire Line
 Connection ~ 2050 6000
 Wire Wire Line
 	2050 6000 2050 6050
-Wire Wire Line
-	1800 4000 1800 5000
 Wire Wire Line
 	1800 5000 2050 5000
 Wire Wire Line
@@ -208,13 +188,9 @@ $EndComp
 Wire Wire Line
 	2100 3300 1800 3300
 Wire Wire Line
-	1800 3300 1800 4000
-Connection ~ 1800 4000
-Wire Wire Line
 	1900 4350 1650 4350
 Wire Wire Line
 	1650 3150 2100 3150
-Connection ~ 1900 4350
 $Comp
 L Robot:Battery_Cell POWER_INPUT1
 U 1 1 5DA1E1A2
@@ -420,32 +396,27 @@ Wire Wire Line
 	6850 1100 6950 1100
 Text HLabel 3500 4350 2    50   Output ~ 0
 PWR_X8R
-Wire Wire Line
-	3150 4350 3500 4350
-Connection ~ 3150 4350
-Wire Wire Line
-	3150 4350 3150 4400
-Connection ~ 3150 4050
+Connection ~ 3400 4050
 $Comp
 L power:GND #PWR01
 U 1 1 5D9CE9F7
-P 3150 4050
-F 0 "#PWR01" H 3150 3800 50  0001 C CNN
-F 1 "GND" H 3155 3877 50  0000 C CNN
-F 2 "" H 3150 4050 50  0001 C CNN
-F 3 "" H 3150 4050 50  0001 C CNN
-	1    3150 4050
+P 3400 4050
+F 0 "#PWR01" H 3400 3800 50  0001 C CNN
+F 1 "GND" H 3405 3877 50  0000 C CNN
+F 2 "" H 3400 4050 50  0001 C CNN
+F 3 "" H 3400 4050 50  0001 C CNN
+	1    3400 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Robot:Generic_DC_to_DC_Module U2
 U 1 1 5D992FE8
-P 2600 4150
-F 0 "U2" H 2600 4617 50  0000 C CNN
-F 1 "Generic_DC_to_DC_Module" H 2600 4526 50  0000 C CNN
-F 2 "Robot:GEN_DC_TO_DC" H 2600 3750 50  0001 C CNN
-F 3 "" H 2600 3650 50  0001 C CNN
-	1    2600 4150
+P 2850 4150
+F 0 "U2" H 2850 4617 50  0000 C CNN
+F 1 "Generic_DC_to_DC_Module" H 2850 4526 50  0000 C CNN
+F 2 "Robot:GEN_DC_TO_DC" H 2850 3750 50  0001 C CNN
+F 3 "" H 2850 3650 50  0001 C CNN
+	1    2850 4150
 	1    0    0    -1  
 $EndComp
 Text HLabel 7600 4900 0    50   Input ~ 0
@@ -473,13 +444,6 @@ Wire Wire Line
 	6100 4700 5350 4700
 Wire Wire Line
 	5350 4800 6100 4800
-Text HLabel 3450 6350 2    50   Output ~ 0
-PWR_DE0_NANO
-Wire Wire Line
-	3150 6350 3450 6350
-Connection ~ 3150 6350
-Wire Wire Line
-	3150 6350 3150 6400
 Text HLabel 3500 7300 2    50   Output ~ 0
 PWR_INDUCTIVE_SENSORS
 Wire Wire Line
@@ -1093,10 +1057,10 @@ VCC3P3
 Wire Wire Line
 	5250 1250 5250 1500
 $Comp
-L Robot:R_Small_US R?
+L Robot:R_Small_US R5
 U 1 1 5DD0ECDF
 P 5050 2700
-F 0 "R?" H 5118 2746 50  0000 L CNN
+F 0 "R5" H 5118 2746 50  0000 L CNN
 F 1 "4.7K" H 5118 2655 50  0000 L CNN
 F 2 "Robot:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 5050 2700 50  0001 C CNN
 F 3 "~" H 5050 2700 50  0001 C CNN
@@ -1119,4 +1083,69 @@ Wire Wire Line
 Wire Wire Line
 	4950 2500 4700 2500
 Connection ~ 5050 2600
+Wire Wire Line
+	3150 6300 3150 6350
+$Comp
+L Robot:Conn_01x02_Male J12
+U 1 1 5DD9930D
+P 3700 6200
+F 0 "J12" H 3700 6350 50  0000 C CNN
+F 1 "PIN HEADER DE0-NANO POWER" H 3500 5850 50  0000 C CNN
+F 2 "Robot:PinHeader_1x02_P2.54mm_Vertical" H 3700 6200 50  0001 C CNN
+F 3 "~" H 3700 6200 50  0001 C CNN
+	1    3700 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 5950 3400 5950
+Wire Wire Line
+	3400 5950 3400 6100
+Wire Wire Line
+	3400 6100 3500 6100
+Connection ~ 3150 5950
+Wire Wire Line
+	3150 6350 3350 6350
+Wire Wire Line
+	3350 6350 3350 6200
+Wire Wire Line
+	3350 6200 3500 6200
+Connection ~ 3150 6350
+Wire Wire Line
+	3150 6350 3150 6400
+Wire Wire Line
+	2300 4300 2300 4350
+Wire Wire Line
+	1800 3300 1800 4000
+Wire Wire Line
+	3400 4300 3400 4350
+$Comp
+L Robot:Jumper_2_Bridged JP3
+U 1 1 5DE3B3A5
+P 2100 4350
+F 0 "JP3" H 2100 4545 50  0000 C CNN
+F 1 "Jumper" H 2100 4454 50  0000 C CNN
+F 2 "" H 2100 4350 50  0001 C CNN
+F 3 "~" H 2100 4350 50  0001 C CNN
+	1    2100 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 4350
+Connection ~ 2300 4350
+Wire Wire Line
+	2300 4350 2300 4400
+Wire Wire Line
+	3500 4350 3400 4350
+Connection ~ 3400 4350
+Wire Wire Line
+	3400 4350 3400 4400
+Wire Wire Line
+	2300 3950 2300 4000
+Wire Wire Line
+	2300 4000 1800 4000
+Connection ~ 2300 4000
+Wire Wire Line
+	2300 4000 2300 4050
+Connection ~ 1800 4000
+Wire Wire Line
+	1800 4000 1800 5000
 $EndSCHEMATC
