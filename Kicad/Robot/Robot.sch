@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Robot-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -550,8 +549,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 5300 5700 5300
 Wire Wire Line
-	9900 6000 8100 6000
-Wire Wire Line
 	5550 6000 5550 5400
 Wire Wire Line
 	5550 5400 5350 5400
@@ -631,39 +628,6 @@ Text Notes 6250 2950 0    50   ~ 0
 GND
 Wire Wire Line
 	9250 5200 9250 4500
-$Comp
-L Robot:R_Small_US R3
-U 1 1 5DB9FC05
-P 8700 5000
-F 0 "R3" H 8768 5046 50  0000 L CNN
-F 1 "4.7K" H 8768 4955 50  0000 L CNN
-F 2 "Robot:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 8700 5000 50  0001 C CNN
-F 3 "~" H 8700 5000 50  0001 C CNN
-	1    8700 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Robot:R_Small_US R4
-U 1 1 5DBA0BBD
-P 9000 5000
-F 0 "R4" H 9068 5046 50  0000 L CNN
-F 1 "4.7k" H 9068 4955 50  0000 L CNN
-F 2 "Robot:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 9000 5000 50  0001 C CNN
-F 3 "~" H 9000 5000 50  0001 C CNN
-	1    9000 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Robot:R_Small_US R2
-U 1 1 5DBA3164
-P 8400 5000
-F 0 "R2" H 8468 5046 50  0000 L CNN
-F 1 "4.7K" H 8468 4955 50  0000 L CNN
-F 2 "Robot:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 8400 5000 50  0001 C CNN
-F 3 "~" H 8400 5000 50  0001 C CNN
-	1    8400 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 5400 9500 5000
 Wire Wire Line
@@ -681,59 +645,6 @@ F 3 "~" H 10100 4500 50  0001 C CNN
 	1    10100 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Robot:R_Small_US R1
-U 1 1 5DC37724
-P 8100 5000
-F 0 "R1" H 8168 5046 50  0000 L CNN
-F 1 "4.7K" H 8168 4955 50  0000 L CNN
-F 2 "Robot:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" H 8100 5000 50  0001 C CNN
-F 3 "~" H 8100 5000 50  0001 C CNN
-	1    8100 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 5200 9000 5200
-Wire Wire Line
-	5800 5400 8700 5400
-Wire Wire Line
-	9000 5100 9000 5200
-Connection ~ 9000 5200
-Wire Wire Line
-	9000 5200 9250 5200
-Wire Wire Line
-	8700 5100 8700 5400
-Connection ~ 8700 5400
-Wire Wire Line
-	8700 5400 9500 5400
-Wire Wire Line
-	8400 5100 8400 5500
-Wire Wire Line
-	5700 5500 8400 5500
-Connection ~ 8400 5500
-Wire Wire Line
-	8400 5500 9900 5500
-Wire Wire Line
-	8100 5100 8100 6000
-Connection ~ 8100 6000
-Wire Wire Line
-	8100 6000 5550 6000
-Wire Wire Line
-	8100 4900 8100 4850
-Wire Wire Line
-	8100 4850 8400 4850
-Wire Wire Line
-	8400 4850 8400 4900
-Wire Wire Line
-	8400 4850 8600 4850
-Wire Wire Line
-	8700 4850 8700 4900
-Connection ~ 8400 4850
-Wire Wire Line
-	8700 4850 9000 4850
-Wire Wire Line
-	9000 4850 9000 4900
-Connection ~ 8700 4850
 $Comp
 L Robot:Screw_Terminal_01x03 J8
 U 1 1 5D98AFC3
@@ -832,13 +743,6 @@ Text HLabel 4400 5200 0    50   Input ~ 0
 3v_pullup
 Text HLabel 8550 4650 0    50   Input ~ 0
 3v_pullup
-Wire Wire Line
-	8550 4650 8600 4650
-Wire Wire Line
-	8600 4650 8600 4850
-Connection ~ 8600 4850
-Wire Wire Line
-	8600 4850 8700 4850
 Wire Wire Line
 	4400 5200 4700 5200
 Wire Wire Line
@@ -1287,4 +1191,47 @@ Wire Wire Line
 Wire Wire Line
 	7000 3300 7000 3400
 Connection ~ 6500 3300
+Wire Wire Line
+	5900 5200 8700 5200
+Wire Wire Line
+	5800 5400 8800 5400
+Wire Wire Line
+	5700 5500 8900 5500
+Wire Wire Line
+	5550 6000 9000 6000
+$Comp
+L Robot:R_Network04 RN1
+U 1 1 5DA28DA9
+P 8900 4900
+F 0 "RN1" H 9088 4900 50  0000 L CNN
+F 1 "R_Network04" H 9088 4855 50  0001 L CNN
+F 2 "Robot:R_Array_SIP5" V 9175 4900 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8900 4900 50  0001 C CNN
+	1    8900 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4650 8700 4700
+Wire Wire Line
+	8550 4650 8700 4650
+Wire Wire Line
+	8700 5100 8700 5200
+Connection ~ 8700 5200
+Wire Wire Line
+	8700 5200 9250 5200
+Wire Wire Line
+	8800 5100 8800 5400
+Connection ~ 8800 5400
+Wire Wire Line
+	8800 5400 9500 5400
+Wire Wire Line
+	8900 5100 8900 5500
+Connection ~ 8900 5500
+Wire Wire Line
+	8900 5500 9900 5500
+Wire Wire Line
+	9000 5100 9000 6000
+Connection ~ 9000 6000
+Wire Wire Line
+	9000 6000 9900 6000
 $EndSCHEMATC

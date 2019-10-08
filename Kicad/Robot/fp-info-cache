@@ -1,4 +1,4 @@
-26697092900944
+28269710624630
 Robot
 C_Disc_D3.8mm_W2.6mm_P2.50mm
 C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.8*2.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf
@@ -69,6 +69,13 @@ RFM9X
 0
 14
 14
+Robot
+R_Array_SIP5
+5-pin Resistor SIP pack
+R
+0
+5
+5
 Robot
 R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical
 Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf

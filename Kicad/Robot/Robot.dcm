@@ -52,6 +52,12 @@ $CMP RFM9X
 D LORA Module
 $ENDCMP
 #
+$CMP R_Network04
+D 4 resistor network, star topology, bussed resistors, small symbol
+K R network star-topology
+F http://www.vishay.com/docs/31509/csc.pdf
+$ENDCMP
+#
 $CMP R_Small_US
 D Resistor, small US symbol
 K r resistor
