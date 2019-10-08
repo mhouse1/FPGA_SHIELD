@@ -6,6 +6,12 @@ K battery cell
 F ~
 $ENDCMP
 #
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
 $CMP Conn_01x02_Male
 D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
