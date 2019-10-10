@@ -1205,7 +1205,7 @@ U 1 1 5DA28DA9
 P 8900 4900
 F 0 "RN1" H 9088 4900 50  0000 L CNN
 F 1 "R_Network04" H 9088 4855 50  0001 L CNN
-F 2 "Resistor_THT:R_Array_SIP5" V 9175 4900 50  0001 C CNN
+F 2 "Robot:R_Array_SIP5" V 9175 4900 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8900 4900 50  0001 C CNN
 	1    8900 4900
 	1    0    0    -1  
