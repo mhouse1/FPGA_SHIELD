@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Robot-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Robot:Conn_02x20_Odd_Even_MountingPin JP3
+L Robot:Conn_02x20_Odd_Even_MountingPin JP2
 U 1 1 5D982EED
 P 5050 4400
-F 0 "JP3" H 5100 5517 50  0000 C CNN
+F 0 "JP2" H 5100 5517 50  0000 C CNN
 F 1 "Altera 40 pin connector" H 5100 5426 50  0000 C CNN
 F 2 "Robot:PinSocket_2x20_P2.54mm_Vertical" H 5050 4400 50  0001 C CNN
 F 3 "~" H 5050 4400 50  0001 C CNN
@@ -25,10 +26,10 @@ F 3 "~" H 5050 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Robot:Conn_02x20_Odd_Even_MountingPin JP2
+L Robot:Conn_02x20_Odd_Even_MountingPin JP1
 U 1 1 5D986497
 P 4400 2000
-F 0 "JP2" H 4450 3117 50  0000 C CNN
+F 0 "JP1" H 4450 3117 50  0000 C CNN
 F 1 "Altera 40 pin connector" H 4450 3026 50  0000 C CNN
 F 2 "Robot:PinSocket_2x20_P2.54mm_Vertical" H 4400 2000 50  0001 C CNN
 F 3 "~" H 4400 2000 50  0001 C CNN
@@ -376,17 +377,6 @@ $EndComp
 Wire Wire Line
 	8000 2400 8000 2550
 Connection ~ 8000 2400
-$Comp
-L Robot:X8R_Receiver U9
-U 1 1 5D971451
-P 7550 2100
-F 0 "U9" H 7625 2725 50  0000 C CNN
-F 1 "X8R_Receiver" H 7625 2634 50  0000 C CNN
-F 2 "Robot:X8R" H 5400 2050 50  0001 C CNN
-F 3 "~" H 5400 2050 50  0001 C CNN
-	1    7550 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5950 3000 4700 3000
 Text HLabel 6850 1100 0    50   Input ~ 0
@@ -956,10 +946,10 @@ Wire Wire Line
 Wire Wire Line
 	3400 4300 3400 4350
 $Comp
-L Robot:Jumper_2_Bridged JP1
+L Robot:Jumper_2_Bridged JP3
 U 1 1 5DE3B3A5
 P 2100 4350
-F 0 "JP1" H 2100 4545 50  0000 C CNN
+F 0 "JP3" H 2100 4545 50  0000 C CNN
 F 1 "Jumper" H 2100 4454 50  0000 C CNN
 F 2 "Robot:PinHeader_1x02_P2.54mm_Vertical" H 2100 4350 50  0001 C CNN
 F 3 "~" H 2100 4350 50  0001 C CNN
@@ -1191,7 +1181,7 @@ Connection ~ 1350 5400
 Wire Wire Line
 	1350 5400 1450 5400
 $Comp
-L Robot:TXS0108E U7
+L Robot-rescue:TXS0108E-Robot U7
 U 1 1 5DA5097E
 P 5350 2000
 F 0 "U7" H 5650 2550 50  0000 C CNN
@@ -1597,4 +1587,15 @@ Wire Wire Line
 Wire Wire Line
 	3250 1150 3150 1150
 Connection ~ 3150 1150
+$Comp
+L Robot:X8R_Receiver U?
+U 1 1 5DA984CA
+P 7550 2100
+F 0 "U?" H 7625 2725 50  0000 C CNN
+F 1 "X8R_Receiver" H 7625 2634 50  0000 C CNN
+F 2 "" H 5400 2050 50  0001 C CNN
+F 3 "~" H 5400 2050 50  0001 C CNN
+	1    7550 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
