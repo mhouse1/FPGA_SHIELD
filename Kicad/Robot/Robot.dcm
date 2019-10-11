@@ -12,6 +12,12 @@ K cap capacitor
 F ~
 $ENDCMP
 #
+$CMP CP1
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
 $CMP Conn_01x02_Male
 D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -50,6 +56,12 @@ $ENDCMP
 #
 $CMP RFM9X
 D LORA Module
+$ENDCMP
+#
+$CMP R_Network02
+D 2 resistor network, star topology, bussed resistors, small symbol
+K R network star-topology
+F http://www.vishay.com/docs/31509/csc.pdf
 $ENDCMP
 #
 $CMP R_Network04
