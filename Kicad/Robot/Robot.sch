@@ -17,24 +17,13 @@ $EndDescr
 $Comp
 L Robot:Conn_02x20_Odd_Even_MountingPin JP2
 U 1 1 5D982EED
-P 5050 4400
-F 0 "JP2" H 5100 5517 50  0000 C CNN
-F 1 "Altera 40 pin connector" H 5100 5426 50  0000 C CNN
-F 2 "Robot:PinSocket_2x20_P2.54mm_Vertical" H 5050 4400 50  0001 C CNN
-F 3 "~" H 5050 4400 50  0001 C CNN
-	1    5050 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Robot:Conn_02x20_Odd_Even_MountingPin JP1
-U 1 1 5D986497
-P 4400 2000
-F 0 "JP1" H 4450 3117 50  0000 C CNN
-F 1 "Altera 40 pin connector" H 4450 3026 50  0000 C CNN
-F 2 "Robot:PinSocket_2x20_P2.54mm_Vertical" H 4400 2000 50  0001 C CNN
-F 3 "~" H 4400 2000 50  0001 C CNN
-	1    4400 2000
-	1    0    0    -1  
+P 5150 4400
+F 0 "JP2" H 5200 5517 50  0000 C CNN
+F 1 "Altera 40 pin connector" H 5200 5426 50  0000 C CNN
+F 2 "Robot:PinSocket_2x20_P2.54mm_Vertical" H 5150 4400 50  0001 C CNN
+F 3 "~" H 5150 4400 50  0001 C CNN
+	1    5150 4400
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Robot:Generic_DC_to_DC_Module U3
@@ -377,14 +366,6 @@ $EndComp
 Wire Wire Line
 	8000 2400 8000 2550
 Connection ~ 8000 2400
-Wire Wire Line
-	5950 3000 4700 3000
-Text HLabel 6850 1100 0    50   Input ~ 0
-PWR_X8R
-Wire Wire Line
-	6850 1100 6950 1100
-Text HLabel 3650 4350 2    50   Output ~ 0
-PWR_X8R
 Connection ~ 3400 4050
 $Comp
 L power:GND #PWR08
@@ -408,93 +389,69 @@ F 3 "" H 2850 3650 50  0001 C CNN
 	1    2850 4150
 	1    0    0    -1  
 $EndComp
-Text HLabel 7600 4900 0    50   Input ~ 0
-PWR_8CH_RLY
-Text HLabel 3000 5550 0    50   Output ~ 0
-PWR_8CH_RLY
 Wire Wire Line
 	3150 5550 3150 5400
-Wire Wire Line
-	5350 4100 6100 4100
-Wire Wire Line
-	5350 4200 6100 4200
-Wire Wire Line
-	6100 4300 5350 4300
-Wire Wire Line
-	5350 4400 6100 4400
-Wire Wire Line
-	6100 4500 5350 4500
-Wire Wire Line
-	5350 4600 6100 4600
-Wire Wire Line
-	6100 4700 5350 4700
-Wire Wire Line
-	5350 4800 6100 4800
-Text HLabel 4000 7300 2    50   Output ~ 0
-PWR_INDUCTIVE_SENSORS
 Wire Wire Line
 	3150 7300 3250 7300
 Connection ~ 3150 7300
 Wire Wire Line
 	3150 7300 3150 7350
 $Comp
-L Robot:Conn_01x10 J12
+L Robot:Conn_01x10 J11
 U 1 1 5D9E2EE3
-P 7900 4400
-F 0 "J12" H 7980 4392 50  0000 L CNN
-F 1 "RELAY HEADER" H 7980 4301 50  0000 L CNN
-F 2 "Robot:PinSocket_1x10_P2.54mm_Vertical" H 7900 4400 50  0001 C CNN
-F 3 "~" H 7900 4400 50  0001 C CNN
-	1    7900 4400
+P 7450 3800
+F 0 "J11" H 7530 3792 50  0000 L CNN
+F 1 "RELAY HEADER" H 7530 3701 50  0000 L CNN
+F 2 "Robot:PinSocket_1x10_P2.54mm_Vertical" H 7450 3800 50  0001 C CNN
+F 3 "~" H 7450 3800 50  0001 C CNN
+	1    7450 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 4100 7700 4100
+	6450 3500 7250 3500
 Wire Wire Line
-	6900 4200 7700 4200
+	6450 3600 7250 3600
 Wire Wire Line
-	6900 4300 7700 4300
+	6450 3700 7250 3700
 Wire Wire Line
-	6900 4400 7700 4400
+	6450 3800 7250 3800
 Wire Wire Line
-	6900 4500 7700 4500
+	6450 3900 7250 3900
 Wire Wire Line
-	6900 4600 7700 4600
+	6450 4000 7250 4000
 Wire Wire Line
-	6900 4700 7700 4700
+	6450 4100 7250 4100
 Wire Wire Line
-	6900 4800 7700 4800
+	6450 4200 7250 4200
 $Comp
 L power:GND #PWR018
 U 1 1 5DA31BC9
-P 7550 4000
-F 0 "#PWR018" H 7550 3750 50  0001 C CNN
-F 1 "GND" H 7555 3827 50  0000 C CNN
-F 2 "" H 7550 4000 50  0001 C CNN
-F 3 "" H 7550 4000 50  0001 C CNN
-	1    7550 4000
+P 7100 3400
+F 0 "#PWR018" H 7100 3150 50  0001 C CNN
+F 1 "GND" H 7105 3227 50  0000 C CNN
+F 2 "" H 7100 3400 50  0001 C CNN
+F 3 "" H 7100 3400 50  0001 C CNN
+	1    7100 3400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7700 4000 7550 4000
-Wire Wire Line
-	7600 4900 7700 4900
+	7250 3400 7100 3400
 $Comp
-L Robot:Screw_Terminal_01x03 J11
+L Robot:Screw_Terminal_01x03 J10
 U 1 1 5DA853B6
 P 6150 2900
-F 0 "J11" H 6100 3150 50  0000 L CNN
-F 1 "LORA" H 6050 2650 50  0000 L CNN
+F 0 "J10" H 6100 3150 50  0000 L CNN
+F 1 "LORA" H 5850 3100 50  0000 L CNN
 F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 6150 2900 50  0001 C CNN
 F 3 "~" H 6150 2900 50  0001 C CNN
 	1    6150 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Robot:Screw_Terminal_01x03 J15
+L Robot:Screw_Terminal_01x03 J14
 U 1 1 5DA88905
 P 10100 5000
-F 0 "J15" H 10180 5042 50  0000 L CNN
+F 0 "J14" H 10180 5042 50  0000 L CNN
 F 1 "SENSOR 2" H 10180 4951 50  0000 L CNN
 F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 10100 5000 50  0001 C CNN
 F 3 "~" H 10100 5000 50  0001 C CNN
@@ -502,10 +459,10 @@ F 3 "~" H 10100 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Robot:Screw_Terminal_01x03 J16
+L Robot:Screw_Terminal_01x03 J15
 U 1 1 5DA893E2
 P 10100 5500
-F 0 "J16" H 10180 5542 50  0000 L CNN
+F 0 "J15" H 10180 5542 50  0000 L CNN
 F 1 "SENSOR 3" H 10180 5451 50  0000 L CNN
 F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 10100 5500 50  0001 C CNN
 F 3 "~" H 10100 5500 50  0001 C CNN
@@ -513,36 +470,16 @@ F 3 "~" H 10100 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Robot:Screw_Terminal_01x03 J17
+L Robot:Screw_Terminal_01x03 J16
 U 1 1 5DA8A489
 P 10100 6000
-F 0 "J17" H 10180 6042 50  0000 L CNN
+F 0 "J16" H 10180 6042 50  0000 L CNN
 F 1 "SENSOR 4" H 10180 5951 50  0000 L CNN
 F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 10100 6000 50  0001 C CNN
 F 3 "~" H 10100 6000 50  0001 C CNN
 	1    10100 6000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5350 5100 5900 5100
-Wire Wire Line
-	5900 5100 5900 5200
-Wire Wire Line
-	5800 5400 5800 5200
-Wire Wire Line
-	5800 5200 5350 5200
-Wire Wire Line
-	5700 5300 5700 5500
-Wire Wire Line
-	5350 5300 5700 5300
-Wire Wire Line
-	5600 6000 5600 5400
-Wire Wire Line
-	5600 5400 5350 5400
-Text HLabel 9650 4400 0    50   Input ~ 0
-PWR_INDUCTIVE_SENSORS
-Wire Wire Line
-	9650 4400 9750 4400
 Wire Wire Line
 	9750 4400 9750 4900
 Wire Wire Line
@@ -590,8 +527,6 @@ Wire Wire Line
 Wire Wire Line
 	9650 4600 9900 4600
 Connection ~ 9650 5100
-Wire Wire Line
-	5500 2800 5500 2900
 Text Notes 6250 2850 0    50   ~ 0
 RX
 Text Notes 6250 3050 0    50   ~ 0
@@ -601,16 +536,14 @@ GND
 Wire Wire Line
 	9250 5200 9250 4500
 Wire Wire Line
-	9450 5400 9450 5000
-Wire Wire Line
 	9450 5000 9900 5000
 Wire Wire Line
 	9250 4500 9900 4500
 $Comp
-L Robot:Screw_Terminal_01x03 J14
+L Robot:Screw_Terminal_01x03 J13
 U 1 1 5DA8614C
 P 10100 4500
-F 0 "J14" H 10180 4542 50  0000 L CNN
+F 0 "J13" H 10180 4542 50  0000 L CNN
 F 1 "SENSOR 1" H 10180 4451 50  0000 L CNN
 F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 10100 4500 50  0001 C CNN
 F 3 "~" H 10100 4500 50  0001 C CNN
@@ -620,53 +553,34 @@ $EndComp
 $Comp
 L Robot:Screw_Terminal_01x03 J6
 U 1 1 5D98AFC3
-P 4100 4200
-F 0 "J6" H 4180 4242 50  0000 L CNN
-F 1 "MotorDriver1" H 4000 3950 50  0000 L CNN
-F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 4100 4200 50  0001 C CNN
-F 3 "~" H 4100 4200 50  0001 C CNN
-	1    4100 4200
-	-1   0    0    1   
+P 4300 4200
+F 0 "J6" H 4380 4242 50  0000 L CNN
+F 1 "MotorDriver1" H 4100 4450 50  0000 L CNN
+F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 4300 4200 50  0001 C CNN
+F 3 "~" H 4300 4200 50  0001 C CNN
+	1    4300 4200
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Robot:Screw_Terminal_01x03 J7
 U 1 1 5D98E149
-P 4100 4700
-F 0 "J7" H 4180 4742 50  0000 L CNN
-F 1 "MotorDriver2" H 4050 4900 50  0000 L CNN
-F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 4100 4700 50  0001 C CNN
-F 3 "~" H 4100 4700 50  0001 C CNN
-	1    4100 4700
-	-1   0    0    1   
+P 4200 4700
+F 0 "J7" H 4280 4742 50  0000 L CNN
+F 1 "MotorDriver2" H 4100 4450 50  0000 L CNN
+F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 4200 4700 50  0001 C CNN
+F 3 "~" H 4200 4700 50  0001 C CNN
+	1    4200 4700
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 4100 4850 4100
-Wire Wire Line
-	4300 4200 4850 4200
-Wire Wire Line
-	4300 4600 4850 4600
-Wire Wire Line
-	4300 4700 4850 4700
 $Comp
 L power:GND #PWR010
 U 1 1 5D9DA318
-P 4300 4800
-F 0 "#PWR010" H 4300 4550 50  0001 C CNN
-F 1 "GND" H 4305 4627 50  0000 C CNN
-F 2 "" H 4300 4800 50  0001 C CNN
-F 3 "" H 4300 4800 50  0001 C CNN
-	1    4300 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5D9DA8F4
-P 4300 4300
-F 0 "#PWR09" H 4300 4050 50  0001 C CNN
-F 1 "GND" H 4305 4127 50  0000 C CNN
-F 2 "" H 4300 4300 50  0001 C CNN
-F 3 "" H 4300 4300 50  0001 C CNN
-	1    4300 4300
+P 4400 4850
+F 0 "#PWR010" H 4400 4600 50  0001 C CNN
+F 1 "GND" H 4405 4677 50  0000 C CNN
+F 2 "" H 4400 4850 50  0001 C CNN
+F 3 "" H 4400 4850 50  0001 C CNN
+	1    4400 4850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -701,17 +615,11 @@ Wire Wire Line
 Connection ~ 1450 3600
 Wire Wire Line
 	1450 3600 1650 3600
-Text HLabel 8550 4650 0    50   Input ~ 0
-3v_pullup
-Wire Wire Line
-	4450 5050 4450 4900
-Wire Wire Line
-	4450 4900 4500 4900
 $Comp
-L Robot:Conn_01x06 J13
+L Robot:Conn_01x06 J12
 U 1 1 5DA26E8F
 P 10050 2000
-F 0 "J13" H 10130 1992 50  0000 L CNN
+F 0 "J12" H 10130 1992 50  0000 L CNN
 F 1 "X8R HEADER" H 10130 1901 50  0000 L CNN
 F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 10050 2000 50  0001 C CNN
 F 3 "~" H 10050 2000 50  0001 C CNN
@@ -769,16 +677,6 @@ F 3 "https://www.olimex.com/Products/Modules/RF/MOD-nRF8001/" H 2600 2000 50  00
 	1    2550 2000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3050 1900 4200 1900
-Wire Wire Line
-	3050 2000 4200 2000
-Wire Wire Line
-	3050 2100 4200 2100
-Wire Wire Line
-	3050 2200 4200 2200
-Wire Wire Line
-	3050 2300 4200 2300
 $Comp
 L power:GND #PWR01
 U 1 1 5DB68597
@@ -793,33 +691,18 @@ $EndComp
 Wire Wire Line
 	2550 1400 2550 1300
 $Comp
-L Robot:TDB62381A U8
-U 1 1 5DA16FAD
-P 6500 4400
-F 0 "U8" H 6250 4950 50  0000 C CNN
-F 1 "TDB62381A" H 6200 4850 50  0000 C CNN
-F 2 "Robot:SOIC-18W_7.5x11.6mm_P1.27mm" H 6500 3850 50  0001 C CNN
-F 3 "" H 6200 4800 50  0001 C CNN
-	1    6500 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR014
 U 1 1 5DA18024
-P 6500 5100
-F 0 "#PWR014" H 6500 4850 50  0001 C CNN
-F 1 "GND" H 6505 4927 50  0000 C CNN
-F 2 "" H 6500 5100 50  0001 C CNN
-F 3 "" H 6500 5100 50  0001 C CNN
-	1    6500 5100
+P 6050 4500
+F 0 "#PWR014" H 6050 4250 50  0001 C CNN
+F 1 "GND" H 6055 4327 50  0000 C CNN
+F 2 "" H 6050 4500 50  0001 C CNN
+F 3 "" H 6050 4500 50  0001 C CNN
+	1    6050 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 5100 6500 5000
-Text HLabel 6450 3300 0    50   Input ~ 0
-PWR_8CH_RLY
-Wire Wire Line
-	6450 3300 6500 3300
+	6050 4500 6050 4400
 Wire Wire Line
 	5750 1700 5950 1700
 Wire Wire Line
@@ -853,10 +736,10 @@ Wire Wire Line
 Wire Wire Line
 	4700 2400 4950 2400
 $Comp
-L power:GND #PWR012
+L power:GND #PWR011
 U 1 1 5DB6E057
 P 5350 2700
-F 0 "#PWR012" H 5350 2450 50  0001 C CNN
+F 0 "#PWR011" H 5350 2450 50  0001 C CNN
 F 1 "GND" H 5355 2527 50  0000 C CNN
 F 2 "" H 5350 2700 50  0001 C CNN
 F 3 "" H 5350 2700 50  0001 C CNN
@@ -876,19 +759,9 @@ Connection ~ 6950 1250
 Wire Wire Line
 	6950 1250 6950 1700
 Wire Wire Line
-	4700 2900 5500 2900
-Wire Wire Line
-	5500 2800 5950 2800
-Text HLabel 2750 2650 2    50   Output ~ 0
-PWR_X8R
-Wire Wire Line
 	2550 2600 2550 2650
 Wire Wire Line
 	2550 2650 2750 2650
-Text HLabel 3400 2500 0    50   Input ~ 0
-VCC3P3
-Text HLabel 5250 900  1    50   Input ~ 0
-VCC3P3
 $Comp
 L Robot:R_Small_US R3
 U 1 1 5DD0ECDF
@@ -913,10 +786,10 @@ Connection ~ 5050 2600
 Wire Wire Line
 	3150 6300 3150 6350
 $Comp
-L Robot:Conn_01x02_Male J4
+L Robot:Conn_01x02_Male J3
 U 1 1 5DD9930D
 P 3700 6200
-F 0 "J4" H 3550 6150 50  0000 C CNN
+F 0 "J3" H 3550 6150 50  0000 C CNN
 F 1 "PIN HEADER DE0-NANO POWER" H 3300 6000 50  0000 C CNN
 F 2 "Robot:PinHeader_1x02_P2.54mm_Vertical" H 3700 6200 50  0001 C CNN
 F 3 "~" H 3700 6200 50  0001 C CNN
@@ -943,8 +816,6 @@ Wire Wire Line
 	2300 4300 2300 4350
 Wire Wire Line
 	1800 3300 1800 4000
-Wire Wire Line
-	3400 4300 3400 4350
 $Comp
 L Robot:Jumper_2_Bridged JP3
 U 1 1 5DE3B3A5
@@ -960,9 +831,6 @@ Connection ~ 1900 4350
 Connection ~ 2300 4350
 Wire Wire Line
 	2300 4350 2300 4400
-Connection ~ 3400 4350
-Wire Wire Line
-	3400 4350 3400 4400
 Wire Wire Line
 	2300 3950 2300 4000
 Wire Wire Line
@@ -988,10 +856,10 @@ $EndComp
 Wire Wire Line
 	2550 2900 2550 2950
 $Comp
-L Robot:C C11
+L Robot:C C12
 U 1 1 5DA23F04
 P 6650 1450
-F 0 "C11" H 6765 1496 50  0000 L CNN
+F 0 "C12" H 6765 1496 50  0000 L CNN
 F 1 ".1uf" H 6765 1405 50  0000 L CNN
 F 2 "Robot:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 6688 1300 50  0001 C CNN
 F 3 "~" H 6650 1450 50  0001 C CNN
@@ -1014,56 +882,54 @@ Wire Wire Line
 $Comp
 L Robot:C C10
 U 1 1 5DA3B3EA
-P 4950 1200
-F 0 "C10" H 5065 1246 50  0000 L CNN
-F 1 ".1uf" H 5065 1155 50  0000 L CNN
-F 2 "Robot:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 4988 1050 50  0001 C CNN
-F 3 "~" H 4950 1200 50  0001 C CNN
-	1    4950 1200
+P 5550 850
+F 0 "C10" H 5665 896 50  0000 L CNN
+F 1 ".1uf" H 5665 805 50  0000 L CNN
+F 2 "Robot:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 5588 700 50  0001 C CNN
+F 3 "~" H 5550 850 50  0001 C CNN
+	1    5550 850 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR011
+L power:GND #PWR012
 U 1 1 5DA3B3F0
-P 4950 1450
-F 0 "#PWR011" H 4950 1200 50  0001 C CNN
-F 1 "GND" H 4955 1277 50  0000 C CNN
-F 2 "" H 4950 1450 50  0001 C CNN
-F 3 "" H 4950 1450 50  0001 C CNN
-	1    4950 1450
+P 5550 1050
+F 0 "#PWR012" H 5550 800 50  0001 C CNN
+F 1 "GND" H 5555 877 50  0000 C CNN
+F 2 "" H 5550 1050 50  0001 C CNN
+F 3 "" H 5550 1050 50  0001 C CNN
+	1    5550 1050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Robot:C C11
+U 1 1 5DA52CFD
+P 6450 3300
+F 0 "C11" V 6600 3350 50  0000 L CNN
+F 1 ".1uf" V 6600 3150 50  0000 L CNN
+F 2 "Robot:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 6488 3150 50  0001 C CNN
+F 3 "~" H 6450 3300 50  0001 C CNN
+	1    6450 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5DA52D03
+P 6700 3300
+F 0 "#PWR016" H 6700 3050 50  0001 C CNN
+F 1 "GND" H 6705 3127 50  0000 C CNN
+F 2 "" H 6700 3300 50  0001 C CNN
+F 3 "" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	4950 1450 4950 1350
+	6700 3300 6600 3300
 $Comp
 L Robot:C C13
-U 1 1 5DA52CFD
-P 7000 3550
-F 0 "C13" H 7115 3596 50  0000 L CNN
-F 1 ".1uf" H 7115 3505 50  0000 L CNN
-F 2 "Robot:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 7038 3400 50  0001 C CNN
-F 3 "~" H 7000 3550 50  0001 C CNN
-	1    7000 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 5DA52D03
-P 7000 3800
-F 0 "#PWR017" H 7000 3550 50  0001 C CNN
-F 1 "GND" H 7005 3627 50  0000 C CNN
-F 2 "" H 7000 3800 50  0001 C CNN
-F 3 "" H 7000 3800 50  0001 C CNN
-	1    7000 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 3800 7000 3700
-$Comp
-L Robot:C C12
 U 1 1 5DA6A692
 P 6950 2650
-F 0 "C12" H 7065 2696 50  0000 L CNN
+F 0 "C13" H 7065 2696 50  0000 L CNN
 F 1 ".1uf" H 7065 2605 50  0000 L CNN
 F 2 "Robot:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 6988 2500 50  0001 C CNN
 F 3 "~" H 6950 2650 50  0001 C CNN
@@ -1071,10 +937,10 @@ F 3 "~" H 6950 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L power:GND #PWR017
 U 1 1 5DA6A698
 P 6950 2900
-F 0 "#PWR016" H 6950 2650 50  0001 C CNN
+F 0 "#PWR017" H 6950 2650 50  0001 C CNN
 F 1 "GND" H 6955 2727 50  0000 C CNN
 F 2 "" H 6950 2900 50  0001 C CNN
 F 3 "" H 6950 2900 50  0001 C CNN
@@ -1084,12 +950,7 @@ $EndComp
 Wire Wire Line
 	6950 2900 6950 2800
 Wire Wire Line
-	4950 1050 5250 1050
-Wire Wire Line
 	5250 1050 5250 1500
-Wire Wire Line
-	5250 1050 5250 900 
-Connection ~ 5250 1050
 Wire Wire Line
 	6650 1300 6650 1250
 Connection ~ 6650 1250
@@ -1099,53 +960,17 @@ Wire Wire Line
 	6950 2500 6950 2400
 Connection ~ 6950 2400
 Wire Wire Line
-	6500 3300 6500 3900
-Wire Wire Line
-	6500 3300 7000 3300
-Wire Wire Line
-	7000 3300 7000 3400
-Connection ~ 6500 3300
-Wire Wire Line
-	5900 5200 8700 5200
-Wire Wire Line
-	5800 5400 8800 5400
-Wire Wire Line
-	5700 5500 8900 5500
-Wire Wire Line
-	5600 6000 9000 6000
-$Comp
-L Robot:R_Network04 RN1
-U 1 1 5DA28DA9
-P 8900 4900
-F 0 "RN1" H 9088 4900 50  0000 L CNN
-F 1 "R_Network04" H 9088 4855 50  0001 L CNN
-F 2 "Robot:R_Array_SIP5" V 9175 4900 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8900 4900 50  0001 C CNN
-	1    8900 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 4650 8700 4700
-Wire Wire Line
-	8550 4650 8700 4650
-Wire Wire Line
 	8700 5100 8700 5200
-Connection ~ 8700 5200
 Wire Wire Line
 	8700 5200 9250 5200
 Wire Wire Line
-	8800 5100 8800 5400
-Connection ~ 8800 5400
-Wire Wire Line
-	8800 5400 9450 5400
+	8800 5350 9450 5350
 Wire Wire Line
 	8900 5100 8900 5500
-Connection ~ 8900 5500
 Wire Wire Line
 	8900 5500 9900 5500
 Wire Wire Line
-	9000 5100 9000 6000
-Connection ~ 9000 6000
+	9000 5100 9000 5650
 Wire Wire Line
 	9000 6000 9900 6000
 Wire Wire Line
@@ -1180,191 +1005,31 @@ Wire Wire Line
 Connection ~ 1350 5400
 Wire Wire Line
 	1350 5400 1450 5400
-$Comp
-L Robot-rescue:TXS0108E-Robot U7
-U 1 1 5DA5097E
-P 5350 2000
-F 0 "U7" H 5650 2550 50  0000 C CNN
-F 1 "TXS0108E" H 5700 2450 50  0000 C CNN
-F 2 "Robot:TSSOP-20_4.4x6.5mm_P0.65mm" H 5350 1450 50  0001 C CNN
-F 3 "" H 5050 2400 50  0001 C CNN
-	1    5350 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 2600 5050 2600
 $Comp
-L Robot:Conn_01x06 J9
+L Robot:Conn_01x06 J8
 U 1 1 5DB57F51
-P 4450 3800
-F 0 "J9" H 4530 3792 50  0000 L CNN
-F 1 "BreakoutHeader" H 4530 3701 50  0000 L CNN
-F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 4450 3800 50  0001 C CNN
-F 3 "~" H 4450 3800 50  0001 C CNN
-	1    4450 3800
+P 4550 5200
+F 0 "J8" H 4630 5192 50  0000 L CNN
+F 1 "BreakoutHeader" H 4630 5101 50  0000 L CNN
+F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 4550 5200 50  0001 C CNN
+F 3 "~" H 4550 5200 50  0001 C CNN
+	1    4550 5200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4650 4000 4850 4000
-Wire Wire Line
-	4850 3900 4650 3900
-Wire Wire Line
-	4650 3800 4850 3800
-Wire Wire Line
-	4850 3700 4650 3700
-Wire Wire Line
-	4650 3600 4850 3600
-Wire Wire Line
-	4850 3500 4650 3500
 $Comp
-L Robot:Conn_01x06 J10
+L Robot:Conn_01x06 J9
 U 1 1 5DBF2FB2
-P 5700 3700
-F 0 "J10" H 5900 3900 50  0000 L CNN
-F 1 "BreakoutHeader" H 5800 3800 50  0000 L CNN
-F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 5700 3700 50  0001 C CNN
-F 3 "~" H 5700 3700 50  0001 C CNN
-	1    5700 3700
+P 5700 4600
+F 0 "J9" H 5800 4600 50  0000 L CNN
+F 1 "BreakoutHeader" H 5800 4300 50  0000 L CNN
+F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 5700 4600 50  0001 C CNN
+F 3 "~" H 5700 4600 50  0001 C CNN
+	1    5700 4600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5350 3500 5500 3500
-Wire Wire Line
-	5350 3600 5500 3600
-Wire Wire Line
-	5350 3700 5500 3700
-Wire Wire Line
-	5500 3800 5350 3800
-Wire Wire Line
-	5350 3900 5500 3900
-Wire Wire Line
-	5500 4000 5350 4000
-$Comp
-L Robot:Conn_01x06 J3
-U 1 1 5DD6A7A6
-P 3600 2900
-F 0 "J3" H 3680 2892 50  0000 L CNN
-F 1 "BreakoutHeader" H 3680 2801 50  0000 L CNN
-F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 3600 2900 50  0001 C CNN
-F 3 "~" H 3600 2900 50  0001 C CNN
-	1    3600 2900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3400 2500 3900 2500
-Wire Wire Line
-	3800 2600 3900 2600
-Wire Wire Line
-	3900 2600 3900 2500
-Connection ~ 3900 2500
-Wire Wire Line
-	3900 2500 4200 2500
-Wire Wire Line
-	3800 2700 3950 2700
-Wire Wire Line
-	3950 2700 3950 2600
-Wire Wire Line
-	3950 2600 4200 2600
-Wire Wire Line
-	3800 2800 4000 2800
-Wire Wire Line
-	4000 2800 4000 2700
-Wire Wire Line
-	4000 2700 4200 2700
-Wire Wire Line
-	3800 2900 4050 2900
-Wire Wire Line
-	4050 2900 4050 2800
-Wire Wire Line
-	4050 2800 4200 2800
-Wire Wire Line
-	3800 3000 4100 3000
-Wire Wire Line
-	4100 3000 4100 2900
-Wire Wire Line
-	4100 2900 4200 2900
-Wire Wire Line
-	3800 3100 4150 3100
-Wire Wire Line
-	4150 3100 4150 3000
-Wire Wire Line
-	4150 3000 4200 3000
-$Comp
-L Robot:Conn_01x06 J5
-U 1 1 5DEA53F5
-P 3950 1400
-F 0 "J5" H 4250 1050 50  0000 L CNN
-F 1 "BreakoutHeader" H 4000 950 50  0000 L CNN
-F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 3950 1400 50  0001 C CNN
-F 3 "~" H 3950 1400 50  0001 C CNN
-	1    3950 1400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4150 1100 4200 1100
-Wire Wire Line
-	4150 1200 4200 1200
-Wire Wire Line
-	4150 1300 4200 1300
-Wire Wire Line
-	4150 1400 4200 1400
-Wire Wire Line
-	4150 1500 4200 1500
-Wire Wire Line
-	4150 1600 4200 1600
-Wire Wire Line
-	3900 5050 4450 5050
-Text HLabel 3900 5050 0    50   Input ~ 0
-3v_pullup
-$Comp
-L Robot:Conn_01x06 J8
-U 1 1 5E01FB92
-P 4100 5450
-F 0 "J8" H 4180 5442 50  0000 L CNN
-F 1 "BreakoutHeader" H 4180 5351 50  0000 L CNN
-F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 4100 5450 50  0001 C CNN
-F 3 "~" H 4100 5450 50  0001 C CNN
-	1    4100 5450
-	-1   0    0    1   
-$EndComp
 Connection ~ 3150 5400
-Wire Wire Line
-	4300 5150 4500 5150
-Wire Wire Line
-	4500 5150 4500 4900
-Connection ~ 4500 4900
-Wire Wire Line
-	4500 4900 4850 4900
-Wire Wire Line
-	4300 5250 4550 5250
-Wire Wire Line
-	4550 5250 4550 5000
-Wire Wire Line
-	4550 5000 4850 5000
-Wire Wire Line
-	4300 5350 4600 5350
-Wire Wire Line
-	4600 5350 4600 5100
-Wire Wire Line
-	4600 5100 4850 5100
-Wire Wire Line
-	4300 5450 4650 5450
-Wire Wire Line
-	4650 5450 4650 5200
-Wire Wire Line
-	4650 5200 4850 5200
-Wire Wire Line
-	4300 5550 4700 5550
-Wire Wire Line
-	4700 5550 4700 5300
-Wire Wire Line
-	4700 5300 4850 5300
-Wire Wire Line
-	4300 5650 4750 5650
-Wire Wire Line
-	4750 5650 4750 5400
-Wire Wire Line
-	4750 5400 4850 5400
 Wire Wire Line
 	5600 2900 5950 2900
 Wire Wire Line
@@ -1381,19 +1046,9 @@ F 3 "" H 5600 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 1700 3150 1700
-Wire Wire Line
 	3050 1800 3250 1800
-Connection ~ 3150 1700
 Wire Wire Line
 	3150 1700 3050 1700
-Connection ~ 3250 1800
-Wire Wire Line
-	3250 1800 4200 1800
-Text HLabel 3050 1150 0    50   Input ~ 0
-VCC3P3
-Wire Wire Line
-	3050 1150 3150 1150
 $Comp
 L Robot:C C1
 U 1 1 5D9F0D3D
@@ -1512,9 +1167,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 7600 3250 7600
 Connection ~ 3250 7600
-Wire Wire Line
-	3700 7300 4000 7300
-Connection ~ 3700 7300
 $Comp
 L Robot:CP1 C6
 U 1 1 5DC27EB3
@@ -1552,8 +1204,6 @@ Connection ~ 3400 4700
 Connection ~ 3150 4950
 Wire Wire Line
 	3750 4400 3400 4400
-Wire Wire Line
-	3400 4350 3650 4350
 $Comp
 L Robot:R_Small_US R1
 U 1 1 5DD438A5
@@ -1585,17 +1235,412 @@ Wire Wire Line
 Wire Wire Line
 	3250 1350 3250 1150
 Wire Wire Line
-	3250 1150 3150 1150
-Connection ~ 3150 1150
+	3250 1150 3200 1150
 $Comp
-L Robot:X8R_Receiver U?
+L Robot:X8R_Receiver U9
 U 1 1 5DA984CA
 P 7550 2100
-F 0 "U?" H 7625 2725 50  0000 C CNN
+F 0 "U9" H 7625 2725 50  0000 C CNN
 F 1 "X8R_Receiver" H 7625 2634 50  0000 C CNN
-F 2 "" H 5400 2050 50  0001 C CNN
+F 2 "Robot:X8R" H 5400 2050 50  0001 C CNN
 F 3 "~" H 5400 2050 50  0001 C CNN
 	1    7550 2100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Robot:TXS0108E U7
+U 1 1 5DAE29A6
+P 5350 2000
+F 0 "U7" H 5100 2550 50  0000 C CNN
+F 1 "TXS0108E" H 5550 2500 50  0000 C CNN
+F 2 "Robot:TSSOP-20_4.4x6.5mm_P0.65mm" H 5350 1450 50  0001 C CNN
+F 3 "" H 5050 2400 50  0001 C CNN
+	1    5350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:Conn_02x20_Odd_Even_MountingPin JP1
+U 1 1 5D986497
+P 4500 2000
+F 0 "JP1" H 4550 3117 50  0000 C CNN
+F 1 "Altera 40 pin connector" H 4550 3026 50  0000 C CNN
+F 2 "Robot:PinSocket_2x20_P2.54mm_Vertical" H 4500 2000 50  0001 C CNN
+F 3 "~" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Robot:Conn_01x06 J5
+U 1 1 5DEA53F5
+P 3900 1600
+F 0 "J5" H 3850 1900 50  0000 L CNN
+F 1 "BreakoutHeader" V 4000 1250 50  0000 L CNN
+F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 3900 1600 50  0001 C CNN
+F 3 "~" H 3900 1600 50  0001 C CNN
+	1    3900 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5250 1050 5400 1050
+Wire Wire Line
+	5400 1050 5400 700 
+Wire Wire Line
+	5400 700  5550 700 
+Wire Wire Line
+	5550 1000 5550 1050
+Wire Wire Line
+	4750 4900 4850 4900
+Wire Wire Line
+	4750 5000 4850 5000
+Wire Wire Line
+	4750 5100 4850 5100
+Wire Wire Line
+	4750 5200 4850 5200
+Wire Wire Line
+	4750 5300 4850 5300
+Wire Wire Line
+	4750 5400 4850 5400
+Text GLabel 8550 5200 0    50   Input ~ 0
+SENSOR1
+Connection ~ 8700 5200
+Wire Wire Line
+	8550 5200 8700 5200
+Text GLabel 8550 5350 0    50   Input ~ 0
+SENSOR2
+Connection ~ 8800 5350
+Wire Wire Line
+	8550 5350 8800 5350
+Text GLabel 8550 5500 0    50   Input ~ 0
+SENSOR3
+Wire Wire Line
+	8550 5500 8900 5500
+Connection ~ 8900 5500
+Wire Wire Line
+	8800 5100 8800 5350
+Wire Wire Line
+	9450 5000 9450 5350
+Text GLabel 8550 5650 0    50   Input ~ 0
+SENSOR4
+Wire Wire Line
+	8550 5650 9000 5650
+Connection ~ 9000 5650
+Wire Wire Line
+	9000 5650 9000 6000
+Text GLabel 4800 3000 2    50   Input ~ 0
+SENSOR1
+Text GLabel 4800 2900 2    50   Input ~ 0
+SENSOR2
+Text GLabel 4550 3700 0    50   Input ~ 0
+SENSOR3
+Text GLabel 4550 3800 0    50   Input ~ 0
+SENSOR4
+Wire Wire Line
+	4550 3700 4850 3700
+Wire Wire Line
+	4550 3800 4850 3800
+Wire Wire Line
+	6050 3300 6300 3300
+Wire Wire Line
+	5350 3500 5650 3500
+Wire Wire Line
+	5350 3600 5650 3600
+Wire Wire Line
+	5350 3700 5650 3700
+Wire Wire Line
+	5350 3800 5650 3800
+Wire Wire Line
+	5350 3900 5650 3900
+Wire Wire Line
+	5350 4000 5650 4000
+Wire Wire Line
+	5350 4100 5650 4100
+Wire Wire Line
+	5350 4200 5650 4200
+Wire Wire Line
+	5350 4400 5500 4400
+Wire Wire Line
+	5350 4500 5500 4500
+Wire Wire Line
+	5350 4600 5500 4600
+Wire Wire Line
+	5350 4700 5500 4700
+Wire Wire Line
+	5350 4800 5500 4800
+Wire Wire Line
+	5350 4900 5500 4900
+Text GLabel 3250 5400 2    50   Input ~ 0
+PWR_8CH_RLY
+Wire Wire Line
+	3250 5400 3150 5400
+Text GLabel 7150 4300 0    50   Input ~ 0
+PWR_8CH_RLY
+Wire Wire Line
+	7150 4300 7250 4300
+Text GLabel 9550 4400 0    50   Input ~ 0
+PWR_IND_SENSOR
+Wire Wire Line
+	9550 4400 9750 4400
+Text GLabel 3900 7300 2    50   Input ~ 0
+PWR_8XR
+Wire Wire Line
+	3900 7300 3700 7300
+Connection ~ 3700 7300
+Text GLabel 6800 1100 0    50   Input ~ 0
+PWR_8XR
+Wire Wire Line
+	6800 1100 6950 1100
+Wire Wire Line
+	3400 4300 3400 4400
+Text GLabel 3550 4300 2    50   Input ~ 0
+PWR_IND_SENSOR
+Wire Wire Line
+	3400 4300 3550 4300
+Connection ~ 3400 4300
+Text GLabel 2750 2650 2    50   Input ~ 0
+PWR_8XR
+Text GLabel 3400 1700 2    50   Input ~ 0
+RST
+Text GLabel 3400 1800 2    50   Input ~ 0
+CS
+Wire Wire Line
+	3400 1700 3150 1700
+Connection ~ 3150 1700
+Wire Wire Line
+	3400 1800 3250 1800
+Connection ~ 3250 1800
+Text GLabel 3400 1900 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	3400 1900 3050 1900
+Text GLabel 3400 2000 2    50   Input ~ 0
+MISO
+Text GLabel 3400 2100 2    50   Input ~ 0
+SCK
+Text GLabel 3400 2200 2    50   Input ~ 0
+G0
+Text GLabel 3400 2300 2    50   Input ~ 0
+EN
+Wire Wire Line
+	3400 2000 3050 2000
+Wire Wire Line
+	3400 2100 3050 2100
+Wire Wire Line
+	3400 2200 3050 2200
+Wire Wire Line
+	3400 2300 3050 2300
+Text GLabel 4050 1100 0    50   Input ~ 0
+RST
+Wire Wire Line
+	4050 1100 4200 1100
+Text GLabel 4800 1100 2    50   Input ~ 0
+CS
+Text GLabel 4800 1200 2    50   Input ~ 0
+MOSI
+Text GLabel 4800 1300 2    50   Input ~ 0
+MISO
+Text GLabel 4800 1400 2    50   Input ~ 0
+SCK
+Text GLabel 4800 1500 2    50   Input ~ 0
+G0
+Text GLabel 4800 1600 2    50   Input ~ 0
+EN
+Wire Wire Line
+	4800 1100 4700 1100
+Wire Wire Line
+	4800 1200 4700 1200
+Wire Wire Line
+	4800 1300 4700 1300
+Wire Wire Line
+	4800 1400 4700 1400
+Wire Wire Line
+	4800 1500 4700 1500
+Wire Wire Line
+	4800 1600 4700 1600
+Wire Wire Line
+	4100 2000 4200 2000
+Wire Wire Line
+	4100 2100 4200 2100
+$Comp
+L Robot:Conn_01x06 J4
+U 1 1 5DD6A7A6
+P 3900 2300
+F 0 "J4" H 3850 2600 50  0000 L CNN
+F 1 "BreakoutHeader" V 4000 1950 50  0000 L CNN
+F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 3900 2300 50  0001 C CNN
+F 3 "~" H 3900 2300 50  0001 C CNN
+	1    3900 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 2200 4200 2200
+Wire Wire Line
+	4100 2300 4200 2300
+Wire Wire Line
+	4100 2400 4200 2400
+Wire Wire Line
+	4100 2500 4200 2500
+Wire Wire Line
+	4100 1300 4200 1300
+Wire Wire Line
+	4100 1400 4200 1400
+Wire Wire Line
+	4100 1500 4200 1500
+Wire Wire Line
+	4100 1600 4200 1600
+Wire Wire Line
+	4100 1700 4200 1700
+Wire Wire Line
+	4100 1800 4200 1800
+Text GLabel 5800 2800 0    50   Input ~ 0
+RX
+Text GLabel 5800 3000 0    50   Input ~ 0
+TX
+Wire Wire Line
+	5800 2800 5950 2800
+Wire Wire Line
+	5800 3000 5950 3000
+Text GLabel 4050 2900 0    50   Input ~ 0
+RX
+Text GLabel 4050 3000 0    50   Input ~ 0
+TX
+Wire Wire Line
+	4050 2900 4200 2900
+Wire Wire Line
+	4050 3000 4200 3000
+$Comp
+L Robot:R_Small_US R4
+U 1 1 5F50E8B1
+P 8700 5000
+F 0 "R4" H 8550 5200 50  0000 L CNN
+F 1 "4.7K" H 8450 5000 50  0000 L CNN
+F 2 "Robot:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 8700 5000 50  0001 C CNN
+F 3 "~" H 8700 5000 50  0001 C CNN
+	1    8700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:R_Small_US R5
+U 1 1 5F51025C
+P 8800 5000
+F 0 "R5" H 8750 5300 50  0000 L CNN
+F 1 "4.7K" H 8450 5100 50  0000 L CNN
+F 2 "Robot:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 8800 5000 50  0001 C CNN
+F 3 "~" H 8800 5000 50  0001 C CNN
+	1    8800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:R_Small_US R6
+U 1 1 5F510D9B
+P 8900 5000
+F 0 "R6" H 8900 5300 50  0000 L CNN
+F 1 "4.7K" H 9050 5100 50  0000 L CNN
+F 2 "Robot:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 8900 5000 50  0001 C CNN
+F 3 "~" H 8900 5000 50  0001 C CNN
+	1    8900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:R_Small_US R7
+U 1 1 5F51198D
+P 9000 5000
+F 0 "R7" H 9050 5200 50  0000 L CNN
+F 1 "4.7K" H 9050 5000 50  0000 L CNN
+F 2 "Robot:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 9000 5000 50  0001 C CNN
+F 3 "~" H 9000 5000 50  0001 C CNN
+	1    9000 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4900 8700 4800
+Wire Wire Line
+	8700 4800 8800 4800
+Wire Wire Line
+	8800 4800 8800 4900
+Wire Wire Line
+	8800 4800 8900 4800
+Wire Wire Line
+	8900 4800 8900 4900
+Connection ~ 8800 4800
+Wire Wire Line
+	8900 4800 9000 4800
+Wire Wire Line
+	9000 4800 9000 4900
+Connection ~ 8900 4800
+Wire Wire Line
+	4700 2900 4800 2900
+Wire Wire Line
+	4700 3000 4800 3000
+$Comp
+L power:GND #PWR0101
+U 1 1 5DAE33BE
+P 4500 4350
+F 0 "#PWR0101" H 4500 4100 50  0001 C CNN
+F 1 "GND" H 4505 4177 50  0000 C CNN
+F 2 "" H 4500 4350 50  0001 C CNN
+F 3 "" H 4500 4350 50  0001 C CNN
+	1    4500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4300 4450 4300
+Wire Wire Line
+	4500 4300 4500 4350
+$Comp
+L Robot:TDB62381A U8
+U 1 1 5DB2B99D
+P 6050 3800
+F 0 "U8" H 6050 4481 50  0000 C CNN
+F 1 "TDB62381A" H 6050 4390 50  0000 C CNN
+F 2 "Robot:SOIC-18W_7.5x11.6mm_P1.27mm" H 6050 3250 50  0001 C CNN
+F 3 "" H 5750 4200 50  0001 C CNN
+	1    6050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4100 4850 4100
+Wire Wire Line
+	4500 4200 4850 4200
+Wire Wire Line
+	4400 4800 4400 4850
+Wire Wire Line
+	4400 4600 4850 4600
+Wire Wire Line
+	4400 4700 4850 4700
+Text GLabel 5650 5050 2    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	5500 4900 5500 5050
+Wire Wire Line
+	5500 5050 5650 5050
+Connection ~ 5500 4900
+Text GLabel 4750 2500 2    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	4750 2500 4700 2500
+Text GLabel 3100 1000 0    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	3100 1000 3200 1000
+Wire Wire Line
+	3200 1000 3200 1150
+Connection ~ 3200 1150
+Wire Wire Line
+	3200 1150 3150 1150
+Text GLabel 5250 700  0    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	5250 700  5400 700 
+Connection ~ 5400 700 
+Text GLabel 5850 3300 0    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	5850 3300 6050 3300
+Connection ~ 6050 3300
+Text GLabel 8450 4650 0    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	8450 4650 8900 4650
+Wire Wire Line
+	8900 4650 8900 4800
 $EndSCHEMATC
