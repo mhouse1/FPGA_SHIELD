@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Robot:Conn_02x20_Odd_Even_MountingPin JP2
-U 1 1 5D982EED
-P 5150 4400
-F 0 "JP2" H 5200 5517 50  0000 C CNN
-F 1 "Altera 40 pin connector" H 5200 5426 50  0000 C CNN
-F 2 "Robot:PinSocket_2x20_P2.54mm_Vertical" H 5150 4400 50  0001 C CNN
-F 3 "~" H 5150 4400 50  0001 C CNN
-	1    5150 4400
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Robot:Generic_DC_to_DC_Module U3
 U 1 1 5D9BEB71
 P 2600 5150
@@ -553,12 +542,12 @@ $EndComp
 $Comp
 L Robot:Screw_Terminal_01x03 J6
 U 1 1 5D98AFC3
-P 4300 4200
-F 0 "J6" H 4380 4242 50  0000 L CNN
-F 1 "MotorDriver1" H 4100 4450 50  0000 L CNN
-F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 4300 4200 50  0001 C CNN
-F 3 "~" H 4300 4200 50  0001 C CNN
-	1    4300 4200
+P 4350 4200
+F 0 "J6" H 4430 4242 50  0000 L CNN
+F 1 "MotorDriver1" H 4150 4450 50  0000 L CNN
+F 2 "Robot:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 4350 4200 50  0001 C CNN
+F 3 "~" H 4350 4200 50  0001 C CNN
+	1    4350 4200
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -703,22 +692,6 @@ F 3 "" H 6050 4500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6050 4500 6050 4400
-Wire Wire Line
-	5750 1700 5950 1700
-Wire Wire Line
-	5750 1800 5950 1800
-Wire Wire Line
-	5750 1900 5950 1900
-Wire Wire Line
-	5750 2000 5950 2000
-Wire Wire Line
-	5750 2100 5950 2100
-Wire Wire Line
-	5750 2200 5950 2200
-Wire Wire Line
-	5750 2300 5950 2300
-Wire Wire Line
-	5750 2400 5950 2400
 Wire Wire Line
 	4700 1700 4950 1700
 Wire Wire Line
@@ -1272,12 +1245,12 @@ $EndComp
 $Comp
 L Robot:Conn_01x06 J5
 U 1 1 5DEA53F5
-P 3900 1600
-F 0 "J5" H 3850 1900 50  0000 L CNN
-F 1 "BreakoutHeader" V 4000 1250 50  0000 L CNN
-F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 3900 1600 50  0001 C CNN
-F 3 "~" H 3900 1600 50  0001 C CNN
-	1    3900 1600
+P 3900 1900
+F 0 "J5" H 3850 2200 50  0000 L CNN
+F 1 "BreakoutHeader" V 4000 1550 50  0000 L CNN
+F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 3900 1900 50  0001 C CNN
+F 3 "~" H 3900 1900 50  0001 C CNN
+	1    3900 1900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1335,27 +1308,13 @@ SENSOR3
 Text GLabel 4550 3800 0    50   Input ~ 0
 SENSOR4
 Wire Wire Line
-	4550 3700 4850 3700
-Wire Wire Line
-	4550 3800 4850 3800
-Wire Wire Line
 	6050 3300 6300 3300
-Wire Wire Line
-	5350 3500 5650 3500
-Wire Wire Line
-	5350 3600 5650 3600
 Wire Wire Line
 	5350 3700 5650 3700
 Wire Wire Line
 	5350 3800 5650 3800
 Wire Wire Line
 	5350 3900 5650 3900
-Wire Wire Line
-	5350 4000 5650 4000
-Wire Wire Line
-	5350 4100 5650 4100
-Wire Wire Line
-	5350 4200 5650 4200
 Wire Wire Line
 	5350 4400 5500 4400
 Wire Wire Line
@@ -1428,26 +1387,20 @@ Wire Wire Line
 	3400 2200 3050 2200
 Wire Wire Line
 	3400 2300 3050 2300
-Text GLabel 4050 1100 0    50   Input ~ 0
+Text GLabel 4050 1300 0    50   Input ~ 0
 RST
-Wire Wire Line
-	4050 1100 4200 1100
-Text GLabel 4800 1100 2    50   Input ~ 0
+Text GLabel 4050 1400 0    50   Input ~ 0
 CS
-Text GLabel 4800 1200 2    50   Input ~ 0
+Text GLabel 4050 1200 0    50   Input ~ 0
 MOSI
-Text GLabel 4800 1300 2    50   Input ~ 0
+Text GLabel 4050 1100 0    50   Input ~ 0
 MISO
-Text GLabel 4800 1400 2    50   Input ~ 0
+Text GLabel 4800 1300 2    50   Input ~ 0
 SCK
-Text GLabel 4800 1500 2    50   Input ~ 0
+Text GLabel 4800 1400 2    50   Input ~ 0
 G0
-Text GLabel 4800 1600 2    50   Input ~ 0
+Text GLabel 4800 1500 2    50   Input ~ 0
 EN
-Wire Wire Line
-	4800 1100 4700 1100
-Wire Wire Line
-	4800 1200 4700 1200
 Wire Wire Line
 	4800 1300 4700 1300
 Wire Wire Line
@@ -1455,36 +1408,26 @@ Wire Wire Line
 Wire Wire Line
 	4800 1500 4700 1500
 Wire Wire Line
-	4800 1600 4700 1600
-Wire Wire Line
 	4100 2000 4200 2000
 Wire Wire Line
 	4100 2100 4200 2100
 $Comp
 L Robot:Conn_01x06 J4
 U 1 1 5DD6A7A6
-P 3900 2300
-F 0 "J4" H 3850 2600 50  0000 L CNN
-F 1 "BreakoutHeader" V 4000 1950 50  0000 L CNN
-F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 3900 2300 50  0001 C CNN
-F 3 "~" H 3900 2300 50  0001 C CNN
-	1    3900 2300
+P 3900 2600
+F 0 "J4" H 3850 2900 50  0000 L CNN
+F 1 "BreakoutHeader" V 4000 2250 50  0000 L CNN
+F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 3900 2600 50  0001 C CNN
+F 3 "~" H 3900 2600 50  0001 C CNN
+	1    3900 2600
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4100 2200 4200 2200
 Wire Wire Line
 	4100 2300 4200 2300
 Wire Wire Line
 	4100 2400 4200 2400
 Wire Wire Line
 	4100 2500 4200 2500
-Wire Wire Line
-	4100 1300 4200 1300
-Wire Wire Line
-	4100 1400 4200 1400
-Wire Wire Line
-	4100 1500 4200 1500
 Wire Wire Line
 	4100 1600 4200 1600
 Wire Wire Line
@@ -1574,18 +1517,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0101
 U 1 1 5DAE33BE
-P 4500 4350
-F 0 "#PWR0101" H 4500 4100 50  0001 C CNN
-F 1 "GND" H 4505 4177 50  0000 C CNN
-F 2 "" H 4500 4350 50  0001 C CNN
-F 3 "" H 4500 4350 50  0001 C CNN
-	1    4500 4350
+P 4550 4350
+F 0 "#PWR0101" H 4550 4100 50  0001 C CNN
+F 1 "GND" H 4555 4177 50  0000 C CNN
+F 2 "" H 4550 4350 50  0001 C CNN
+F 3 "" H 4550 4350 50  0001 C CNN
+	1    4550 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 4300 4450 4300
-Wire Wire Line
-	4500 4300 4500 4350
+	4550 4300 4550 4350
 $Comp
 L Robot:TDB62381A U8
 U 1 1 5DB2B99D
@@ -1598,15 +1539,7 @@ F 3 "" H 5750 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 4100 4850 4100
-Wire Wire Line
-	4500 4200 4850 4200
-Wire Wire Line
 	4400 4800 4400 4850
-Wire Wire Line
-	4400 4600 4850 4600
-Wire Wire Line
-	4400 4700 4850 4700
 Text GLabel 5650 5050 2    50   Input ~ 0
 VCC3P3
 Wire Wire Line
@@ -1643,4 +1576,91 @@ Wire Wire Line
 	8450 4650 8900 4650
 Wire Wire Line
 	8900 4650 8900 4800
+Wire Wire Line
+	4100 1900 4200 1900
+Wire Wire Line
+	5750 1700 5950 1700
+Wire Wire Line
+	5750 1800 5950 1800
+Wire Wire Line
+	5750 1900 5950 1900
+Wire Wire Line
+	5750 2000 5950 2000
+Wire Wire Line
+	5750 2100 5950 2100
+Wire Wire Line
+	5750 2200 5950 2200
+Wire Wire Line
+	5750 2300 5950 2300
+Wire Wire Line
+	5750 2400 5950 2400
+Wire Wire Line
+	4050 1300 4200 1300
+Wire Wire Line
+	4050 1400 4200 1400
+Wire Wire Line
+	4050 1200 4200 1200
+Wire Wire Line
+	4050 1100 4200 1100
+Wire Wire Line
+	5650 4000 5500 4000
+Wire Wire Line
+	5500 4000 5500 4100
+Wire Wire Line
+	5500 4100 5350 4100
+Wire Wire Line
+	5650 4100 5550 4100
+Wire Wire Line
+	5550 4100 5550 4200
+Wire Wire Line
+	5550 4200 5350 4200
+Wire Wire Line
+	5650 4200 5600 4200
+Wire Wire Line
+	5600 4200 5600 4300
+Wire Wire Line
+	5600 4300 5350 4300
+Wire Wire Line
+	4400 4700 4850 4700
+Wire Wire Line
+	4400 4600 4850 4600
+Wire Wire Line
+	4550 4200 4850 4200
+Wire Wire Line
+	4550 4100 4850 4100
+Wire Wire Line
+	4550 3800 4850 3800
+Wire Wire Line
+	4550 3700 4850 3700
+Wire Wire Line
+	4800 3500 4850 3500
+$Comp
+L Robot:Conn_02x20_Odd_Even_MountingPin JP2
+U 1 1 5D982EED
+P 5150 4400
+F 0 "JP2" H 5200 5600 50  0000 C CNN
+F 1 "Altera 40 pin connector" H 5200 5550 50  0000 C CNN
+F 2 "Robot:PinSocket_2x20_P2.54mm_Vertical" H 5150 4400 50  0001 C CNN
+F 3 "~" H 5150 4400 50  0001 C CNN
+	1    5150 4400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3350 5550 3500
+Wire Wire Line
+	5650 3500 5550 3500
+Wire Wire Line
+	5550 3350 4650 3350
+Wire Wire Line
+	4650 3350 4650 3600
+Wire Wire Line
+	4650 3600 4850 3600
+Wire Wire Line
+	5650 3600 5450 3600
+Wire Wire Line
+	5450 3600 5450 3400
+Wire Wire Line
+	5450 3400 4800 3400
+Wire Wire Line
+	4800 3400 4800 3500
 $EndSCHEMATC

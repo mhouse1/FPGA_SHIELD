@@ -1235,7 +1235,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 1350 3250 1150
 Wire Wire Line
-	3250 1150 3150 1150
+	3250 1150 3200 1150
 $Comp
 L Robot:X8R_Receiver U9
 U 1 1 5DA984CA
@@ -1607,4 +1607,40 @@ Wire Wire Line
 	4400 4600 4850 4600
 Wire Wire Line
 	4400 4700 4850 4700
+Text GLabel 5650 5050 2    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	5500 4900 5500 5050
+Wire Wire Line
+	5500 5050 5650 5050
+Connection ~ 5500 4900
+Text GLabel 4750 2500 2    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	4750 2500 4700 2500
+Text GLabel 3100 1000 0    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	3100 1000 3200 1000
+Wire Wire Line
+	3200 1000 3200 1150
+Connection ~ 3200 1150
+Wire Wire Line
+	3200 1150 3150 1150
+Text GLabel 5250 700  0    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	5250 700  5400 700 
+Connection ~ 5400 700 
+Text GLabel 5850 3300 0    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	5850 3300 6050 3300
+Connection ~ 6050 3300
+Text GLabel 8450 4650 0    50   Input ~ 0
+VCC3P3
+Wire Wire Line
+	8450 4650 8900 4650
+Wire Wire Line
+	8900 4650 8900 4800
 $EndSCHEMATC
