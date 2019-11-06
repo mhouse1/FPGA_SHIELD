@@ -164,11 +164,7 @@ F 3 "" H 2150 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 3300 1800 3300
-Wire Wire Line
 	1900 4350 1650 4350
-Wire Wire Line
-	1650 3150 1850 3150
 $Comp
 L Robot:Battery_Cell PI1
 U 1 1 5DA1E1A2
@@ -187,7 +183,7 @@ Wire Wire Line
 	1800 5400 1800 5000
 Connection ~ 1650 3600
 Wire Wire Line
-	1650 3600 1650 3150
+	1650 3600 1650 3300
 Wire Wire Line
 	1650 3600 1650 4350
 Wire Wire Line
@@ -787,8 +783,6 @@ Wire Wire Line
 	3150 6350 3150 6400
 Wire Wire Line
 	2300 4300 2300 4350
-Wire Wire Line
-	1800 3300 1800 4000
 $Comp
 L Robot:Jumper_2_Bridged JP3
 U 1 1 5DE3B3A5
@@ -811,7 +805,6 @@ Wire Wire Line
 Connection ~ 2300 4000
 Wire Wire Line
 	2300 4000 2300 4050
-Connection ~ 1800 4000
 Wire Wire Line
 	1800 4000 1800 5000
 Connection ~ 2550 2650
@@ -1660,4 +1653,11 @@ Wire Wire Line
 	4050 1300 4200 1300
 Wire Wire Line
 	4050 1400 4200 1400
+Connection ~ 1800 4000
+Wire Wire Line
+	1800 3150 1850 3150
+Wire Wire Line
+	1800 3150 1800 4000
+Wire Wire Line
+	1850 3300 1650 3300
 $EndSCHEMATC
