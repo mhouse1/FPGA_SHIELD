@@ -29,3 +29,8 @@ changes for next version:
 * replace with surface mount resistors 
 * move J11 and U8 to above JP1 so relay module is inline with PCB giving an overall smaller footprint for control board.
 remove JP3
+* delete/remove lora module
+* add LM1085ISX-ADJ/NOPB or something similar for regulating power going to the USB converter
+* add mini fuse, use keystone 3568
+* replace terminal blocks with ED100/2DS	, 
+
