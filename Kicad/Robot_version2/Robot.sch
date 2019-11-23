@@ -165,17 +165,6 @@ F 3 "" H 3600 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1900 4350 1650 4350
-$Comp
-L Robot:Battery_Cell PI1
-U 1 1 5DA1E1A2
-P 700 4550
-F 0 "PI1" H 818 4646 50  0001 L CNN
-F 1 "XT60_CONNECTOR" H 500 4400 50  0000 L CNN
-F 2 "Robot:XT60PW" V 700 4610 50  0001 C CNN
-F 3 "~" V 700 4610 50  0001 C CNN
-	1    700  4550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	700  4650 700  5400
 Connection ~ 1800 5400
@@ -752,8 +741,6 @@ Wire Wire Line
 	3150 6350 3150 6400
 Wire Wire Line
 	2300 3950 2300 4000
-Wire Wire Line
-	2300 4000 1800 4000
 Connection ~ 2300 4000
 Wire Wire Line
 	2300 4000 2300 4050
@@ -861,7 +848,7 @@ Wire Wire Line
 	1350 2200 1350 3600
 Connection ~ 1350 3600
 Wire Wire Line
-	1350 3600 1450 3600
+	1350 3600 1400 3600
 Wire Wire Line
 	1050 2300 1250 2300
 Wire Wire Line
@@ -884,7 +871,7 @@ Wire Wire Line
 	1350 6400 1350 5400
 Connection ~ 1350 5400
 Wire Wire Line
-	1350 5400 1450 5400
+	1350 5400 1400 5400
 Wire Wire Line
 	4700 2600 5050 2600
 $Comp
@@ -1347,17 +1334,6 @@ Wire Wire Line
 	4100 2700 4200 2700
 Wire Wire Line
 	4100 2800 4200 2800
-$Comp
-L Robot:Conn_01x05 J8
-U 1 1 5DBD863E
-P 5700 5200
-F 0 "J8" H 5780 5242 50  0000 L CNN
-F 1 "Conn_01x05" H 5780 5151 50  0000 L CNN
-F 2 "Robot:PinHeader_1x05_P2.54mm_Vertical" H 5700 5200 50  0001 C CNN
-F 3 "~" H 5700 5200 50  0001 C CNN
-	1    5700 5200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5350 5000 5500 5000
 Wire Wire Line
@@ -1420,17 +1396,6 @@ Wire Wire Line
 Wire Wire Line
 	2000 3550 2000 3650
 Connection ~ 2000 3550
-$Comp
-L power:GND #PWR09
-U 1 1 5DEA89BF
-P 2000 3850
-F 0 "#PWR09" H 2000 3600 50  0001 C CNN
-F 1 "GND" H 2150 3800 50  0000 C CNN
-F 2 "" H 2000 3850 50  0001 C CNN
-F 3 "" H 2000 3850 50  0001 C CNN
-	1    2000 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1700 3250 1600 3250
 Wire Wire Line
@@ -1447,28 +1412,6 @@ F 1 "CP1" H 2815 3355 50  0000 L CNN
 F 2 "Robot:CP_Radial_D5.0mm_P2.50mm" H 2700 3400 50  0001 C CNN
 F 3 "~" H 2700 3400 50  0001 C CNN
 	1    2700 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR021
-U 1 1 5DED33B4
-P 2700 3550
-F 0 "#PWR021" H 2700 3300 50  0001 C CNN
-F 1 "GND" H 2705 3377 50  0000 C CNN
-F 2 "" H 2700 3550 50  0001 C CNN
-F 3 "" H 2700 3550 50  0001 C CNN
-	1    2700 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR022
-U 1 1 5DEFC569
-P 3300 3550
-F 0 "#PWR022" H 3300 3300 50  0001 C CNN
-F 1 "GND" H 3305 3377 50  0000 C CNN
-F 2 "" H 3300 3550 50  0001 C CNN
-F 3 "" H 3300 3550 50  0001 C CNN
-	1    3300 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1590,8 +1533,105 @@ Wire Wire Line
 	6250 4100 6400 4100
 Wire Wire Line
 	6250 4200 6400 4200
-Text GLabel 4000 1200 0    50   Input ~ 0
-RI4
 Wire Wire Line
-	4000 1200 4200 1200
+	6450 3050 7000 3050
+Wire Wire Line
+	7000 3050 7000 2400
+Connection ~ 7000 1700
+Wire Wire Line
+	7000 1700 7000 -850
+Connection ~ 7000 1800
+Wire Wire Line
+	7000 1800 7000 1700
+Connection ~ 7000 1900
+Wire Wire Line
+	7000 1900 7000 1800
+Connection ~ 7000 2000
+Wire Wire Line
+	7000 2000 7000 1900
+Connection ~ 7000 2100
+Wire Wire Line
+	7000 2100 7000 2000
+Connection ~ 7000 2200
+Wire Wire Line
+	7000 2200 7000 2100
+Connection ~ 7000 2300
+Wire Wire Line
+	7000 2300 7000 2200
+Connection ~ 7000 2400
+Wire Wire Line
+	7000 2400 7000 2300
+Text GLabel 4800 1300 2    50   Input ~ 0
+RI8
+Wire Wire Line
+	4800 1300 4700 1300
+Text GLabel 4800 1400 2    50   Input ~ 0
+RI7
+Wire Wire Line
+	4800 1400 4700 1400
+Text GLabel 4800 1500 2    50   Input ~ 0
+RI6
+Wire Wire Line
+	4800 1500 4700 1500
+Text GLabel 5500 5000 2    50   Input ~ 0
+RI5
+Text GLabel 5500 5100 2    50   Input ~ 0
+RI4
+Text GLabel 5500 5200 2    50   Input ~ 0
+RI3
+Text GLabel 5500 5300 2    50   Input ~ 0
+RI2
+Text GLabel 5500 5400 2    50   Input ~ 0
+RI1
+Wire Wire Line
+	2000 3850 2000 4000
+Connection ~ 2000 4000
+Wire Wire Line
+	2000 4000 1800 4000
+Wire Wire Line
+	2700 3550 3300 3550
+Wire Wire Line
+	2250 4000 2250 3650
+Wire Wire Line
+	2250 3650 2700 3650
+Wire Wire Line
+	2700 3650 2700 3550
+Wire Wire Line
+	2000 4000 2250 4000
+Connection ~ 2250 4000
+Wire Wire Line
+	2250 4000 2300 4000
+Connection ~ 2700 3550
+Wire Wire Line
+	1400 4400 1400 3600
+Wire Wire Line
+	1400 3600 1450 3600
+Connection ~ 1400 3600
+Wire Wire Line
+	1400 4700 1400 5400
+Connection ~ 1400 5400
+Wire Wire Line
+	1400 5400 1450 5400
+$Comp
+L Robot:Battery_Cell BT1
+U 1 1 5E360E27
+P 700 4550
+F 0 "BT1" H 818 4646 50  0000 L CNN
+F 1 "Battery_Cell" H 818 4555 50  0000 L CNN
+F 2 "TerrafirmaComponents:XT60PW" V 700 4610 50  0001 C CNN
+F 3 "~" V 700 4610 50  0001 C CNN
+	1    700  4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:Battery_Cell BT2
+U 1 1 5E362BC1
+P 1400 4600
+F 0 "BT2" H 1518 4696 50  0000 L CNN
+F 1 "Battery_Cell" H 1518 4605 50  0000 L CNN
+F 2 "TerrafirmaComponents:XT60_M" V 1400 4660 50  0001 C CNN
+F 3 "~" V 1400 4660 50  0001 C CNN
+	1    1400 4600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
