@@ -1,0 +1,117 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Battery_Cell
+D Single-cell battery
+K battery cell
+F ~
+$ENDCMP
+#
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CP1
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP Conn_01x02_Male
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x05
+D Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x06
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x10
+D Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_02x20_Odd_Even_MountingPin
+D Generic connectable mounting pin connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Jumper_2_Bridged
+D Jumper, 2-pole, closed/bridged
+K Jumper SPST
+F ~
+$ENDCMP
+#
+$CMP MOD-nRF8001
+D Bluetooth Low Energy module based on nRF8001 chipset
+K Bluetooth Low Energy nRF8001
+F https://www.olimex.com/Products/Modules/RF/MOD-nRF8001/
+$ENDCMP
+#
+$CMP RFM9X
+D LORA Module
+$ENDCMP
+#
+$CMP R_Network02
+D 2 resistor network, star topology, bussed resistors, small symbol
+K R network star-topology
+F http://www.vishay.com/docs/31509/csc.pdf
+$ENDCMP
+#
+$CMP R_Network04
+D 4 resistor network, star topology, bussed resistors, small symbol
+K R network star-topology
+F http://www.vishay.com/docs/31509/csc.pdf
+$ENDCMP
+#
+$CMP R_Small_US
+D Resistor, small US symbol
+K r resistor
+F ~
+$ENDCMP
+#
+$CMP Screw_Terminal_01x03
+D Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
+K screw terminal
+F ~
+$ENDCMP
+#
+$CMP Screw_Terminal_01x04
+D Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K screw terminal
+F ~
+$ENDCMP
+#
+$CMP TBD62089A
+D 8-Channel Source Type Transistor Array, TTL and CMOS compatible, 500mA, 50V, DIP-18/SOP-18/SSOP-18/SOIC-18W
+K relays solenoids lamps steppers servos LEDs
+$ENDCMP
+#
+$CMP TDB62381A
+D 8-Channel Source Type Transistor Array, TTL and CMOS compatible, 500mA, 50V, DIP-18/SOP-18/SSOP-18/SOIC-18W
+K relays solenoids lamps steppers servos LEDs
+$ENDCMP
+#
+$CMP TXS0108E
+D 8-Channel Source Type Transistor Array, TTL and CMOS compatible, 500mA, 50V, DIP-18/SOP-18/SSOP-18/SOIC-18W
+K relays solenoids lamps steppers servos LEDs
+$ENDCMP
+#
+$CMP X8R_Receiver
+K X8R
+F ~
+$ENDCMP
+#
+#End Doc Library
