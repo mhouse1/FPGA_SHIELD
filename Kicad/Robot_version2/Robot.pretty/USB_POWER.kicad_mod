@@ -1,4 +1,4 @@
-(module USB_POWER (layer F.Cu) (tedit 5DA3EC18)
+(module USB_POWER (layer F.Cu) (tedit 5DD8AC78)
   (fp_text reference REF** (at 12 -5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

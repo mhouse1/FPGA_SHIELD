@@ -1,4 +1,4 @@
-16376498294468649
+16382802192813727
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -66437,6 +66437,13 @@ mounting hole 4.3mm no annular m4
 0
 0
 Robot
+Mounting_Hole_4_3mm
+
+
+0
+0
+0
+Robot
 PinHeader_1x02_P2.54mm_Vertical
 Through hole straight pin header, 1x02, 2.54mm pitch, single row
 Through hole pin header THT 1x02 2.54mm single row
@@ -66478,6 +66485,13 @@ Through hole socket strip THT 1x10 2.54mm single row
 0
 10
 10
+Robot
+PinSocket_2x20_P1.27mm_Vertical
+Through hole straight socket strip, 2x20, 1.27mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x20 1.27mm double row
+0
+40
+40
 Robot
 PinSocket_2x20_P2.54mm_Vertical
 Through hole straight socket strip, 2x20, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
@@ -66535,6 +66549,13 @@ SOIC SO
 18
 18
 Robot
+TO-263-3_TabPin2
+TO-263 / D2PAK / DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-3-1/
+D2PAK DDPAK TO-263 D2PAK-3 TO-263-3 SOT-404
+0
+8
+3
+Robot
 TSSOP-20_4.4x6.5mm_P0.65mm
 20-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)
 SSOP 0.65
@@ -66550,6 +66571,13 @@ THT Terminal Block Phoenix MKDS-1,5-3-5.08 pitch 5.08mm size 15.2x9.8mm^2 drill 
 3
 Robot
 USB_POWER
+
+
+0
+2
+2
+Robot
+USB_POWER_flush
 
 
 0
