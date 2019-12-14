@@ -1533,13 +1533,7 @@ Wire Wire Line
 	6250 4100 6400 4100
 Wire Wire Line
 	6250 4200 6400 4200
-Wire Wire Line
-	6450 3050 7000 3050
-Wire Wire Line
-	7000 3050 7000 2400
 Connection ~ 7000 1700
-Wire Wire Line
-	7000 1700 7000 -850
 Connection ~ 7000 1800
 Wire Wire Line
 	7000 1800 7000 1700
@@ -1632,6 +1626,40 @@ F 1 "Battery_Cell" H 1518 4605 50  0000 L CNN
 F 2 "TerrafirmaComponents:XT60_M" V 1400 4660 50  0001 C CNN
 F 3 "~" V 1400 4660 50  0001 C CNN
 	1    1400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Robot:Conn_01x06 J17
+U 1 1 5E072238
+P 5750 3900
+F 0 "J17" H 5850 3900 50  0000 L CNN
+F 1 "BreakoutHeader" H 5850 3600 50  0000 L CNN
+F 2 "Robot:PinHeader_1x06_P2.54mm_Vertical" H 5750 3900 50  0001 C CNN
+F 3 "~" H 5750 3900 50  0001 C CNN
+	1    5750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3700 5550 3700
+Wire Wire Line
+	5550 3800 5350 3800
+Wire Wire Line
+	5550 3900 5350 3900
+Wire Wire Line
+	5350 4000 5550 4000
+Wire Wire Line
+	5550 4100 5350 4100
+Wire Wire Line
+	5350 4200 5550 4200
+$Comp
+L Mechanical:MountingHole MH7
+U 1 1 5DF5E71D
+P 1700 650
+F 0 "MH7" H 1800 696 50  0000 L CNN
+F 1 "MountingHole" H 1800 605 50  0000 L CNN
+F 2 "Robot:MountingHole_4.3mm_M4" H 1700 650 50  0001 C CNN
+F 3 "~" H 1700 650 50  0001 C CNN
+	1    1700 650 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
