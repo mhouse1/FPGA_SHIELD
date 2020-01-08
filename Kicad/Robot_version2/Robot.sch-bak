@@ -1029,9 +1029,10 @@ L Robot:CP1 C9
 U 1 1 5DC79213
 P 3750 4550
 F 0 "C9" H 3865 4596 50  0000 L CNN
-F 1 "CP1" H 3865 4505 50  0000 L CNN
+F 1 "10uF" H 3865 4505 50  0000 L CNN
 F 2 "Robot:CP_Radial_D5.0mm_P2.50mm" H 3750 4550 50  0001 C CNN
-F 3 "~" H 3750 4550 50  0001 C CNN
+F 3 "478-1839-ND" H 3750 4550 50  0001 C CNN
+F 4 "TAP106K016SCS" H 3750 4550 50  0001 C CNN "Part number"
 	1    3750 4550
 	1    0    0    -1  
 $EndComp
@@ -1597,12 +1598,12 @@ Wire Wire Line
 	2250 4000 2300 4000
 Connection ~ 2700 3550
 Wire Wire Line
-	1400 4400 1400 3600
+	1400 4650 1400 3600
 Wire Wire Line
 	1400 3600 1450 3600
 Connection ~ 1400 3600
 Wire Wire Line
-	1400 4700 1400 5400
+	1400 4950 1400 5400
 Connection ~ 1400 5400
 Wire Wire Line
 	1400 5400 1450 5400
@@ -1611,7 +1612,7 @@ L Robot:Battery_Cell BT1
 U 1 1 5E360E27
 P 700 4550
 F 0 "BT1" H 818 4646 50  0000 L CNN
-F 1 "Battery_Cell" H 818 4555 50  0000 L CNN
+F 1 "batttery_xt60_right_angle" H 818 4555 50  0000 L CNN
 F 2 "TerrafirmaComponents:XT60PW" V 700 4610 50  0001 C CNN
 F 3 "~" V 700 4610 50  0001 C CNN
 	1    700  4550
@@ -1620,12 +1621,12 @@ $EndComp
 $Comp
 L Robot:Battery_Cell BT2
 U 1 1 5E362BC1
-P 1400 4600
-F 0 "BT2" H 1518 4696 50  0000 L CNN
-F 1 "Battery_Cell" H 1518 4605 50  0000 L CNN
-F 2 "TerrafirmaComponents:XT60_M" V 1400 4660 50  0001 C CNN
-F 3 "~" V 1400 4660 50  0001 C CNN
-	1    1400 4600
+P 1400 4850
+F 0 "BT2" H 1518 4946 50  0000 L CNN
+F 1 "battery_xt60_vertical" H 950 4750 50  0000 L CNN
+F 2 "TerrafirmaComponents:XT60_M" V 1400 4910 50  0001 C CNN
+F 3 "~" V 1400 4910 50  0001 C CNN
+	1    1400 4850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1651,4 +1652,15 @@ Wire Wire Line
 	5550 4100 5350 4100
 Wire Wire Line
 	5350 4200 5550 4200
+$Comp
+L Mechanical:MountingHole MH7
+U 1 1 5DF5E71D
+P 1700 650
+F 0 "MH7" H 1800 696 50  0000 L CNN
+F 1 "MountingHole" H 1800 605 50  0000 L CNN
+F 2 "Robot:MountingHole_4.3mm_M4" H 1700 650 50  0001 C CNN
+F 3 "~" H 1700 650 50  0001 C CNN
+	1    1700 650 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
