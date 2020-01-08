@@ -14,6 +14,15 @@ An awsome shield that supports multiple tranceivers
 ![Main Schematic View](https://github.com/mhouse1/FPGA_SHIELD/blob/master/Documentation/board_model2.png)
 
 
+* control board with relays
+![Main Schematic View](https://github.com/mhouse1/FPGA_SHIELD/blob/master/Documentation/control_board.jpg)
+
+* assembled
+![Main Schematic View](https://github.com/mhouse1/FPGA_SHIELD/blob/master/Documentation/Assembled_control_board.JPG)
+
+* lora radios
+![Main Schematic View](https://github.com/mhouse1/FPGA_SHIELD/blob/master/Documentation/lora_radios.jpg)
+
 
 note: must adjust converters before powering on level shifting circuit, burned out the chip forgetting that on the first board.
 
